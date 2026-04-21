@@ -69,23 +69,12 @@
                     </svg>
                     Download for Mac
                 </a>
-                <a href="#pricing" class="btn btn-windows" style="background: rgba(0, 120, 212, 0.4);">
+                <button id="startTrailer" class="btn btn-ghost btn-trailer">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                        <polyline points="7 10 12 15 17 10" />
-                        <line x1="12" y1="15" x2="12" y2="3" />
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
                     </svg>
-                    Win (.exe)
-                </a>
-                <a href="#pricing" class="btn btn-windows">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                        <rect x="2" y="2" width="9" height="9" />
-                        <rect x="13" y="2" width="9" height="9" />
-                        <rect x="2" y="13" width="9" height="9" />
-                        <rect x="13" y="13" width="9" height="9" />
-                    </svg>
-                    Win (.msix)
-                </a>
+                    Watch Feature Tour
+                </button>
             </div>
             <div class="hero-shortcut">
                 <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>V</kbd> (Mac) &nbsp;|&nbsp; <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
@@ -93,46 +82,75 @@
             </div>
         </div>
 
-        <!-- App mockup -->
-        <div class="hero-mockup">
-            <div class="mockup-window">
-                <div class="mockup-header">
-                    <div class="mockup-logo">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
-                            height="16">
+        <!-- Pixel-Perfect Live Mockup -->
+        <div class="hero-mockup live-mockup">
+            <div class="app-window shadow-xl">
+                <div class="app-header">
+                    <div class="app-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
                             <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
                             <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
                         </svg>
                         <span>ClipVault</span>
                     </div>
-                    <span class="mockup-badge">5 clips</span>
+                    <div class="app-actions">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+                    </div>
                 </div>
-                <div class="mockup-search">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                        <circle cx="11" cy="11" r="8" />
-                        <path d="M21 21l-4.35-4.35" />
+                
+                <div class="app-search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
-                    <span>Search clips… (⌘F)</span>
+                    <span>Search clips... (⌘F)</span>
                 </div>
-                <div class="mockup-tabs">
-                    <span class="tab-active">All</span>
-                    <span>★ Pinned</span>
+
+                <div class="app-tabs">
+                    <div class="tab active">All</div>
+                    <div class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"></path></svg> Pinned</div>
+                    <div class="spacer"></div>
+                    <div class="clear-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg> Clear All</div>
                 </div>
-                <div class="mockup-clip pinned">
-                    <div class="mockup-clip-text">const API_KEY = "sk-proj-abc123..."</div>
-                    <div class="mockup-clip-meta">★ pinned · 2m ago · 38 chars</div>
+
+                <div class="clip-list">
+                    <div class="clip-card pinned">
+                        <div class="clip-glow"></div>
+                        <div class="clip-body">
+                            <div class="clip-text">AlzaSyDhrxUB6BzCjYW6YF18MzUCXw6KttUzYUI</div>
+                            <div class="clip-footer">
+                                <span>Apr 11 · 39 chars</span>
+                                <div class="clip-tools">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"></path></svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="clip-card">
+                        <div class="clip-glow"></div>
+                        <div class="clip-body">
+                            <div class="clip-text">https://polar.sh/dashboard/ailooplabs-llc</div>
+                            <div class="clip-footer">
+                                <span>1h ago · 41 chars</span>
+                                <div class="clip-tools">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"></path></svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mockup-clip">
-                    <div class="mockup-clip-text">Meeting notes: Q1 roadmap review...</div>
-                    <div class="mockup-clip-meta">5m ago · 247 chars</div>
-                </div>
-                <div class="mockup-clip">
-                    <div class="mockup-clip-text">ssh -i ~/.ssh/id_ed25519 deploy@prod</div>
-                    <div class="mockup-clip-meta">12m ago · 39 chars</div>
-                </div>
-                <div class="mockup-clip fade">
-                    <div class="mockup-clip-text">https://ailooplabs.com/clipvault...</div>
-                    <div class="mockup-clip-meta">1h ago · 52 chars</div>
+
+                <div class="floating-add">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="18" height="18">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -632,7 +650,194 @@
         document.querySelectorAll('.feature-card, .use-case-card, .doc-block, .step').forEach(el => {
             observer.observe(el);
         });
+
+        // Trailer Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const startTrailerBtn = document.getElementById('startTrailer');
+            const trailerOverlay = document.getElementById('trailerOverlay');
+            const closeTrailerBtn = document.getElementById('closeTrailer');
+            const trailerSlides = document.querySelectorAll('.trailer-slide');
+            let currentSlide = 0;
+            let slideInterval;
+
+            if (!startTrailerBtn || !trailerOverlay || !closeTrailerBtn) return;
+
+            function updateDots() {
+                document.querySelectorAll('.t-dot').forEach((d, i) => {
+                    d.classList.toggle('active', i === currentSlide);
+                });
+            }
+
+            function showSlide(index) {
+                trailerSlides.forEach(s => s.classList.remove('active'));
+                trailerSlides[index].classList.add('active');
+                updateDots();
+            }
+
+            window.jumpSlide = function(index) {
+                currentSlide = index;
+                showSlide(currentSlide);
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 4500);
+            };
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % trailerSlides.length;
+                showSlide(currentSlide);
+            }
+
+            startTrailerBtn.addEventListener('click', () => {
+                trailerOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                currentSlide = 0;
+                showSlide(0);
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 4500);
+            });
+
+            closeTrailerBtn.addEventListener('click', () => {
+                trailerOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+                clearInterval(slideInterval);
+            });
+            
+            // Allow closing with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && trailerOverlay.classList.contains('active')) {
+                    closeTrailerBtn.click();
+                }
+            });
+        });
     </script>
+
+    <!-- Trailer Overlay -->
+    <div id="trailerOverlay" class="trailer-overlay">
+        <button id="closeTrailer" class="trailer-close">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="trailer-content">
+
+            <!-- Slide 1: Instant Search -->
+            <div class="trailer-slide active" data-slide="1">
+                <div class="slide-label">Feature 1 of 5</div>
+                <h3>Instant Search</h3>
+                <p>Find any clip in milliseconds. Full-text search across your entire history — just press <kbd>⌘F</kbd>.</p>
+                <div class="slide-demo">
+                    <div class="demo-window">
+                        <div class="demo-search active-search">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            <span class="search-text">API_KEY<span class="cursor-blink">|</span></span>
+                        </div>
+                        <div class="demo-clips">
+                            <div class="demo-clip highlight-clip"><div class="demo-glow"></div><div class="demo-ct">const <mark>API_KEY</mark> = "sk-proj-abc123..."</div></div>
+                            <div class="demo-clip"><div class="demo-glow"></div><div class="demo-ct">STRIPE_<mark>API_KEY</mark>=sk_live_51abc...</div></div>
+                            <div class="demo-clip faded"><div class="demo-glow"></div><div class="demo-ct">Meeting notes: Q1 roadmap...</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Pin Important Clips -->
+            <div class="trailer-slide" data-slide="2">
+                <div class="slide-label">Feature 2 of 5</div>
+                <h3>Pin Important Clips</h3>
+                <p>Star any clip to pin it. Pinned clips stay at the top forever and survive <strong>Clear All</strong>.</p>
+                <div class="slide-demo">
+                    <div class="demo-window">
+                        <div class="demo-tabs-row"><span class="demo-tab-active">All</span><span class="demo-tab">★ Pinned</span></div>
+                        <div class="demo-clips">
+                            <div class="demo-clip pinned-clip">
+                                <div class="demo-glow pinned-glow"></div>
+                                <div class="demo-ct">
+                                    <svg style="color:#f59e0b;display:inline;vertical-align:middle;margin-right:6px" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"></path></svg>
+                                    ssh -i ~/.ssh/id_ed25519 deploy@prod
+                                </div>
+                                <div class="demo-meta">★ pinned · always stays here</div>
+                            </div>
+                            <div class="demo-clip"><div class="demo-glow"></div><div class="demo-ct">Meeting notes: Q1 roadmap...</div></div>
+                            <div class="demo-clip faded"><div class="demo-glow"></div><div class="demo-ct">https://github.com/ailooplabs</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Edit Before Paste -->
+            <div class="trailer-slide" data-slide="3">
+                <div class="slide-label">Feature 3 of 5</div>
+                <h3>Edit Before You Paste</h3>
+                <p>Click the pencil icon to tweak any clip on the fly — fix typos, trim whitespace, or customize a snippet.</p>
+                <div class="slide-demo">
+                    <div class="demo-window">
+                        <div class="demo-edit-modal">
+                            <div class="demo-edit-label">Edit Clip</div>
+                            <div class="demo-edit-box">Hello, my name is Jordan.<span class="cursor-blink">|</span></div>
+                            <div class="demo-edit-actions">
+                                <div class="demo-btn-ghost">Cancel</div>
+                                <div class="demo-btn-primary">Save & Copy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Privacy First -->
+            <div class="trailer-slide" data-slide="4">
+                <div class="slide-label">Feature 4 of 5</div>
+                <h3>100% Local. Zero Tracking.</h3>
+                <p>Every clip lives in your browser's <code>localStorage</code>. No servers. No cloud sync. No telemetry. Your data never leaves your machine.</p>
+                <div class="slide-demo">
+                    <div class="demo-privacy-card">
+                        <div class="privacy-row"><span class="privacy-icon pass">✓</span> Stored on your device only</div>
+                        <div class="privacy-row"><span class="privacy-icon pass">✓</span> Zero network requests made</div>
+                        <div class="privacy-row"><span class="privacy-icon pass">✓</span> No account required</div>
+                        <div class="privacy-row"><span class="privacy-icon fail">✗</span> Cloud backup (by design)</div>
+                        <div class="privacy-row"><span class="privacy-icon fail">✗</span> Analytics & telemetry</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Global Shortcut -->
+            <div class="trailer-slide" data-slide="5">
+                <div class="slide-label">Feature 5 of 5</div>
+                <h3>Always One Shortcut Away</h3>
+                <p>ClipVault lives silently in your menu bar. No dock icon, no distraction. Just press the shortcut and it's there.</p>
+                <div class="slide-demo">
+                    <div class="demo-shortcut-row">
+                        <div class="demo-keys">
+                            <kbd class="key-large">⌘</kbd>
+                            <span class="key-plus">+</span>
+                            <kbd class="key-large">⇧</kbd>
+                            <span class="key-plus">+</span>
+                            <kbd class="key-large">V</kbd>
+                        </div>
+                        <div class="demo-platform">macOS</div>
+                    </div>
+                    <div class="demo-shortcut-row">
+                        <div class="demo-keys">
+                            <kbd class="key-large">Ctrl</kbd>
+                            <span class="key-plus">+</span>
+                            <kbd class="key-large">Shift</kbd>
+                            <span class="key-plus">+</span>
+                            <kbd class="key-large">V</kbd>
+                        </div>
+                        <div class="demo-platform">Windows</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="trailer-progress">
+                <div class="t-dot active" onclick="jumpSlide(0)"></div>
+                <div class="t-dot" onclick="jumpSlide(1)"></div>
+                <div class="t-dot" onclick="jumpSlide(2)"></div>
+                <div class="t-dot" onclick="jumpSlide(3)"></div>
+                <div class="t-dot" onclick="jumpSlide(4)"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
