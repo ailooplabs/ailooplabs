@@ -61,7 +61,7 @@
                 Search,
                 pin, edit, and reuse your clipboard history — all with a single shortcut.</p>
             <div class="hero-actions">
-                <a href="#pricing" class="btn btn-primary">
+                <a id="heroDownloadBtn" href="#pricing" class="btn btn-primary">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                         <polyline points="7 10 12 15 17 10" />
@@ -473,7 +473,7 @@
                     <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg> 100% Privacy — no telemetry</li>
                 </ul>
                 
-                <a href="https://ailooplabs.lemonsqueezy.com/checkout/buy/5d083733-eb53-4aab-8154-36b59dc3dc62" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;">Get ClipVault Now — $9.99</a>
+                <a href="https://ailooplabs.lemonsqueezy.com/checkout/buy/4828b20c-a2bc-4a97-9a59-09046239539a" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;">Get ClipVault Now — $9.99</a>
                 <div class="guarantee">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                     14-day money-back guarantee
@@ -653,6 +653,20 @@
 
         // Trailer Logic
         document.addEventListener('DOMContentLoaded', () => {
+            // Dynamic OS Download Button Text
+            const isWindows = navigator.platform.indexOf('Win') !== -1 || navigator.userAgent.indexOf('Windows') !== -1;
+            const heroBtn = document.getElementById('heroDownloadBtn');
+            if (heroBtn && isWindows) {
+                heroBtn.innerHTML = `
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download for Windows
+                `;
+            }
+
             const startTrailerBtn = document.getElementById('startTrailer');
             const trailerOverlay = document.getElementById('trailerOverlay');
             const closeTrailerBtn = document.getElementById('closeTrailer');
