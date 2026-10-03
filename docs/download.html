@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Download ClipVault for macOS and Windows. Thank you for your purchase.">
+    <title>Download ClipVault — Thank You for Your Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .download-hero {
+            padding: 120px 24px 60px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .success-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(63, 185, 80, 0.12);
+            border: 1px solid rgba(63, 185, 80, 0.35);
+            color: #3fb950;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            box-shadow: 0 0 20px rgba(63, 185, 80, 0.15);
+        }
+
+        .success-pill svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .download-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            max-width: 960px;
+            margin: 40px auto 0;
+            text-align: left;
+        }
+
+        .dl-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            backdrop-filter: blur(16px);
+        }
+
+        .dl-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+        }
+
+        .dl-card.highlighted {
+            border-color: var(--accent);
+            box-shadow: 0 0 35px var(--accent-glow);
+        }
+
+        .dl-card-badge {
+            position: absolute;
+            top: -12px;
+            right: 24px;
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 9999px;
+        }
+
+        .dl-card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .dl-os-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary);
+        }
+
+        .dl-os-icon svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .dl-card-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .dl-card-sub {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .dl-specs {
+            margin: 16px 0 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .dl-spec-tag {
+            font-size: 0.78rem;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .dl-card-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius);
+            text-decoration: none;
+            transition: all 0.2s;
+            margin-top: auto;
+        }
+
+        .btn-dl-mac {
+            background: var(--accent);
+            color: #ffffff;
+            box-shadow: 0 4px 18px var(--accent-glow);
+        }
+
+        .btn-dl-mac:hover {
+            background: var(--accent-hover);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .btn-dl-win {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 4px 18px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-dl-win:hover {
+            background: #3b82f6;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .guide-section {
+            max-width: 960px;
+            margin: 50px auto 80px;
+            padding: 0 24px;
+        }
+
+        .guide-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            backdrop-filter: blur(12px);
+        }
+
+        .steps-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 28px;
+        }
+
+        .step-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+        }
+
+        .step-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--accent-hover);
+            font-weight: 700;
+            border-radius: 8px;
+            margin-bottom: 14px;
+        }
+
+        .step-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .step-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .notice-card {
+            margin-top: 24px;
+            background: rgba(234, 179, 8, 0.07);
+            border: 1px solid rgba(234, 179, 8, 0.25);
+            border-radius: var(--radius);
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #fde047;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .notice-card svg {
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            color: #eab308;
+            margin-top: 2px;
+        }
+
+        .support-strip {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+        }
+
+        .support-strip a {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="clipvault.html" class="nav-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" width="24" height="24">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                </svg>
+                ClipVault
+            </a>
+            <div class="nav-links">
+                <a href="clipvault.html#features">Features</a>
+                <a href="clipvault.html#docs">Docs</a>
+                <a href="clipvault.html" class="btn-download-nav">Product Page</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Celebration Section -->
+    <section class="download-hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+
+        <div class="success-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            Order Confirmed & License Ready
+        </div>
+
+        <h1>Thank you for your purchase!<br><span class="gradient-text">Download ClipVault</span></h1>
+        <p class="hero-subtitle">Your ClipVault Pro license key has been delivered to your email. Download your installer below to get started immediately.</p>
+
+        <!-- OS Download Cards -->
+        <div class="download-cards-grid">
+            <!-- macOS Card -->
+            <div class="dl-card" id="macCard">
+                <div class="dl-card-badge" id="macBadge" style="display: none;">Recommended</div>
+                <div class="dl-card-header">
+                    <div class="dl-os-icon">
+                        <!-- Apple SVG -->
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.85.94-2.92-1 .04-2.18.66-2.88 1.48-.61.71-1.14 1.83-1 2.89 1.13.09 2.31-.68 2.94-1.45z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="dl-card-title">ClipVault for Mac</div>
+                        <div class="dl-card-sub">Apple Silicon (M1 / M2 / M3 / M4)</div>
+                    </div>
+                </div>
+
+                <div class="dl-specs">
+                    <span class="dl-spec-tag">v1.1.1</span>
+                    <span class="dl-spec-tag">.dmg installer</span>
+                    <span class="dl-spec-tag">macOS 12+</span>
+                    <span class="dl-spec-tag">~105 MB</span>
+                </div>
+
+                <ul class="pricing-features" style="margin-bottom: 24px;">
+                    <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg> Native menu bar clipboard assistant</li>
+                    <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg> Smart sensitive data auto-masking</li>
+                    <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg> AES-256 encrypted local LAN sync</li>
+                </ul>
+
+                <a href="https://github.com/ailooplabs/ailooplabs/releases/download/clipvault-v1.1.1-beta/ClipVault-1.1.1-beta-arm64.dmg"
+                    class="dl-card-btn btn-dl-mac" id="macDownloadBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download for Mac (.dmg)
+                </a>
+            </div>
+
+            <!-- Windows Card -->
+            <div class="dl-card" id="winCard">
+                <div class="dl-card-badge" id="winBadge" style="display: none;">Recommended</div>
+                <div class="dl-card-header">
+                    <div class="dl-os-icon">
+                        <!-- Windows SVG -->
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="dl-card-title">ClipVault for Windows</div>
+                        <div class="dl-card-sub">Windows 10 / 11 (64-bit)</div>
+                    </div>
+                </div>
+
+                <div class="dl-specs">
+                    <span class="dl-spec-tag">v1.1.1</span>
+                    <span class="dl-spec-tag">.exe setup</span>
+                    <span class="dl-spec-tag">Windows 10 & 11</span>
+                    <span class="dl-spec-tag">~92 MB</span>
+                </div>
+
+                <ul class="pricing-features" style="margin-bottom: 24px;">
+                    <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg> Lightweight system tray resident</li>
+                    <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg> Global quick-search shortcut (Ctrl+Shift+V)</li>
+                    <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg> Zero telemetry & 100% offline-ready</li>
+                </ul>
+
+                <a href="https://github.com/ailooplabs/ailooplabs/releases/download/clipvault-v1.1.1-beta/ClipVault.Setup.1.1.1-beta.exe"
+                    class="dl-card-btn btn-dl-win" id="winDownloadBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download for Windows (.exe)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activation Guide Section -->
+    <section class="guide-section">
+        <div class="guide-box">
+            <h2 style="font-size: 1.7rem; font-weight: 700; color: var(--text-primary);">⚡ Quick 3-Step Setup</h2>
+            <p style="color: var(--text-secondary); margin-top: 6px;">Follow these steps to unlock full ClipVault Pro features on your machine.</p>
+
+            <div class="steps-row">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div class="step-title">Install the App</div>
+                    <div class="step-desc">
+                        <strong>Mac:</strong> Open the <code>.dmg</code> and drag <strong>ClipVault.app</strong> into your <strong>Applications</strong> folder.<br>
+                        <strong>Windows:</strong> Double-click the <code>.exe</code> installer and follow the prompt.
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div class="step-title">Launch ClipVault</div>
+                    <div class="step-desc">
+                        Open ClipVault from Applications. It runs quietly in your <strong>top menu bar (Mac)</strong> or <strong>system tray (Windows)</strong> as a clipboard icon.
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <div class="step-title">Activate License</div>
+                    <div class="step-desc">
+                        Click the menu bar icon &rarr; click <strong>Unlock / License</strong>. Copy the License Key from your Lemon Squeezy receipt email and paste it to activate.
+                    </div>
+                </div>
+            </div>
+
+            <!-- macOS First Launch Notice -->
+            <div class="notice-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+                <div>
+                    <strong>macOS Gatekeeper Note:</strong> On first launch, if macOS displays a warning that the developer cannot be verified:
+                    <br>Simply <strong>Right-click (Control-click)</strong> <code>ClipVault.app</code> in your Applications folder and click <strong>Open</strong>, then click <strong>Open</strong> in the prompt. Or navigate to <strong>System Settings &rarr; Privacy & Security &rarr; Click "Open Anyway"</strong>.
+                </div>
+            </div>
+
+            <div class="support-strip">
+                Need help or have a question about your license? Reply to your receipt email or reach us anytime at <a href="mailto:support@ailooplabs.com">support@ailooplabs.com</a>.
+                <br>You can also view your official invoice at <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener">Lemon Squeezy Order Portal</a>.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-copy">
+                &copy; 2026 AILoopLabs LLC. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="clipvault.html">ClipVault Overview</a>
+                <a href="clipvault.html#docs">Documentation</a>
+                <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener">My Orders</a>
+                <a href="index.html">AILoopLabs</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smart OS Detection Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const isWindows = navigator.platform.indexOf('Win') !== -1 || navigator.userAgent.indexOf('Windows') !== -1;
+            const macCard = document.getElementById('macCard');
+            const winCard = document.getElementById('winCard');
+            const macBadge = document.getElementById('macBadge');
+            const winBadge = document.getElementById('winBadge');
+
+            if (isWindows) {
+                winCard.classList.add('highlighted');
+                winBadge.style.display = 'block';
+            } else {
+                macCard.classList.add('highlighted');
+                macBadge.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
