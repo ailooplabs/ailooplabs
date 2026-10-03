@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Presenter Overlay — Invisible teleprompter and live AI co-pilot for presentations, live demos, and webinars. Built with Tauri, Rust, and React by AILoopLabs.">
+    <meta name="keywords"
+        content="presenter overlay, invisible teleprompter, AI presentation assistant, screen share privacy, tauri, rust, devrel tools, live demo copilot">
+    <meta name="author" content="AILoopLabs">
+    <meta property="og:title" content="Presenter Overlay — Invisible Teleprompter & Live AI Co-Pilot">
+    <meta property="og:description"
+        content="Zero-leak screen-share hiding with live contextual AI Q&A for high-stakes presentations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ailooplabs.com/presenter-overlay.html">
+    <title>Presenter Overlay — Invisible Teleprompter & Live AI Co-Pilot | AILoopLabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .overlay-preview-card {
+            background: rgba(22, 27, 34, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 18px;
+            padding: 32px;
+            max-width: 860px;
+            margin: 40px auto 0;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(139, 92, 246, 0.15);
+            text-align: left;
+        }
+
+        .overlay-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .overlay-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+        .overlay-indicator .pulse {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #10b981;
+            animation: pulse 1.8s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.4; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.15); }
+            100% { opacity: 0.4; transform: scale(0.9); }
+        }
+
+        .overlay-pill {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-family: monospace;
+        }
+
+        .overlay-body-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .overlay-body-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .overlay-pane {
+            background: rgba(10, 14, 20, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .overlay-pane-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .overlay-notes-text {
+            color: #d1d5db;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+
+        .qa-bubble {
+            background: rgba(139, 92, 246, 0.12);
+            border-left: 3px solid var(--accent);
+            padding: 12px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #e5e7eb;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- Navigation -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" width="24" height="24">
+                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+                </svg>
+                Presenter Overlay
+            </a>
+            <div class="nav-links">
+                <a href="index.html">← AILoopLabs</a>
+                <a href="#features">Features</a>
+                <a href="#use-cases">Use Cases</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#architecture">Architecture</a>
+                <a href="https://github.com/ailooplabs/presenter-overlay" target="_blank" rel="noopener"
+                    class="btn-download-nav">GitHub Repo ↗</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- Hero Section -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Tauri v2 · Native Rust Performance · 100% Privacy</div>
+            <h1>The Presenter's Superpower:<br><span class="gradient-text">Invisible Teleprompter & AI Co-Pilot</span></h1>
+            <p class="hero-subtitle">Presenter Overlay sits directly on your screen during live demos, keynotes, and
+                webinars. With native macOS screen-share masking, your audience sees only your slides, while you keep
+                notes and contextual AI answers right at eye level.</p>
+            <div class="hero-actions">
+                <a href="https://github.com/ailooplabs/presenter-overlay" target="_blank" rel="noopener"
+                    class="btn btn-primary btn-lg">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    View on GitHub
+                </a>
+                <a href="#how-it-works" class="btn btn-ghost">
+                    See How It Works ↓
+                </a>
+            </div>
+
+            <!-- Interactive UI Mockup Card -->
+            <div class="overlay-preview-card">
+                <div class="overlay-header">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <img src="presenter-overlay-icon.png" alt="Presenter Overlay Icon"
+                            style="width: 42px; height: 42px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <strong style="color: #fff; font-size: 1.05rem;">Presenter Overlay</strong>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary);">Floating HUD · Sharing
+                                Excluded</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span class="overlay-indicator">
+                            <span class="pulse"></span> Invisible to Zoom & Teams
+                        </span>
+                        <span class="overlay-pill">Opacity: 85%</span>
+                    </div>
+                </div>
+
+                <div class="overlay-body-grid">
+                    <!-- Left: Teleprompter Notes -->
+                    <div class="overlay-pane">
+                        <div class="overlay-pane-title">📝 Smart Teleprompter</div>
+                        <div class="overlay-notes-text">• Introduce architectural shift to event-driven pipelines
+• Emphasize 4x throughput gain with zero regression
+• Mention benchmark: 12,000 req/sec on single core
+• Demo failure recovery under partition</div>
+                    </div>
+
+                    <!-- Right: Live AI Co-Pilot -->
+                    <div class="overlay-pane">
+                        <div class="overlay-pane-title">🤖 Ambient AI Co-Pilot</div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">
+                            Audience: <em>"How does partition recovery handle write skew?"</em>
+                        </div>
+                        <div class="qa-bubble">
+                            <strong>AI Suggested Answer:</strong><br>
+                            "Recovery uses distributed vector clocks and deterministic rollback logs, guaranteeing
+                            linearizable reads upon partition heal."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- Stats Bar -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="stats-bar">
+        <div class="stats-inner">
+            <div class="stat">
+                <div class="stat-value"><span class="gradient-text">&lt; 30MB</span></div>
+                <div class="stat-label">RAM Usage (Tauri v2)</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value"><span class="gradient-text">0%</span></div>
+                <div class="stat-label">Screen-Share Leak</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value"><span class="gradient-text">100%</span></div>
+                <div class="stat-label">Local & Private</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value"><span class="gradient-text">0ms</span></div>
+                <div class="stat-label">Audio Intercept Latency</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- Features Grid -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="features" id="features">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-label">Engineered For Presenters</span>
+                <h2>Never get caught flat-footed<br>during a live presentation.</h2>
+                <p>Designed for engineers, DevRels, founders, and sales leaders who give mission-critical demos.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🫥</div>
+                    <h3>Zero-Leak Screen-Share Hiding</h3>
+                    <p>Uses native Cocoa-level window flags (<code>NSWindowSharingNone</code>) on macOS. While you read
+                        your notes directly over your slides, Zoom, Teams, Meet, Loom, and OBS see absolutely nothing.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Context-Aware AI Co-Pilot</h3>
+                    <p>Silently listens to your live speech and transcribes context. When tough audience questions arise,
+                        ask the co-pilot to generate concise answers tailored specifically to what you just demonstrated.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3>Natural Eye Contact</h3>
+                    <p>Position your notes directly underneath your camera lens. Speak naturally with flawless eye
+                        contact without looking down at secondary monitors or paper scripts.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rust + Tauri Lightweight Core</h3>
+                    <p>Built on Tauri v2 and Rust. Uses under 30MB of RAM and virtually 0% CPU. No stuttering or frame
+                        drops during GPU-intensive screen shares or heavy code compilation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Stage-Ready Customization</h3>
+                    <p>Adjust window opacity from 0% to 100%, scale fonts up to 32px, and toggle high-contrast modes to
+                        ensure perfect readability in any studio or stage lighting environment.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Sandboxed Privacy</h3>
+                    <p>Zero telemetry, zero third-party analytics. Notes are stored in local sandbox storage, and AI
+                        prompts use your own direct Gemini API key without intermediary servers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- How It Works Section -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="docs" id="how-it-works">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-label">Workflow</span>
+                <h2>How Presenter Overlay works.</h2>
+                <p>Four seamless steps from setup to keynote delivery.</p>
+            </div>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <h3>1. Launch & Position</h3>
+                    <p>Open Presenter Overlay. Move the semi-transparent HUD right below your webcam or over your
+                        presentation window.</p>
+                </div>
+                <div class="doc-card">
+                    <h3>2. Start Screen Share</h3>
+                    <p>Share your full desktop or application window on Zoom, Teams, or Meet. Cocoa window filtering
+                        ensures audience invisibility.</p>
+                </div>
+                <div class="doc-card">
+                    <h3>3. Ambient Transcription</h3>
+                    <p>Turn on the microphone co-pilot. The engine automatically captures your talking points as live
+                        context.</p>
+                </div>
+                <div class="doc-card">
+                    <h3>4. Ace The Q&A</h3>
+                    <p>When an audience member asks a complex question, type or speak the query to receive instant,
+                        fact-checked talking points.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- Use Cases -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="use-cases" id="use-cases">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-label">Target Audiences</span>
+                <h2>Built for high-stakes speakers.</h2>
+                <p>See how teams across tech leverage Presenter Overlay.</p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">💻</div>
+                    <h3>Developer Relations</h3>
+                    <p>Paste terminal commands, architectural talking points, and API secrets right over your IDE
+                        without risking accidental audience disclosure.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">💼</div>
+                    <h3>Solutions Engineers</h3>
+                    <p>Keep competitive pricing sheets, SLA specs, and feature comparison matrices handy during
+                        customer demos.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🚀</div>
+                    <h3>Founders & Executives</h3>
+                    <p>Deliver pitch decks and investor updates with flawless confidence and uninterrupted eye contact.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🎓</div>
+                    <h3>Online Educators & Streamers</h3>
+                    <p>Record crisp tutorial videos in OBS or Loom with speaking cues positioned right near the lens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- Architecture Section -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="docs" id="architecture">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-label">Under The Hood</span>
+                <h2>Modern native architecture.</h2>
+                <p>Lean, auditable, and built with industry-standard technologies.</p>
+            </div>
+            <div class="doc-card" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <h3>📦 Tech Stack</h3>
+                <ul class="doc-list" style="margin-top: 16px;">
+                    <li><strong>Tauri v2 Core:</strong> Ultra-light native webview container with macOS Cocoa bridging.</li>
+                    <li><strong>Rust Backend:</strong> Handles native window attributes (<code>NSWindowSharingNone</code>) and system hooks.</li>
+                    <li><strong>React 18 + TypeScript:</strong> Fast, responsive UI with zero-latency state synchronization.</li>
+                    <li><strong>Google Gemini API:</strong> Contextual natural language synthesis with low latency.</li>
+                    <li><strong>Tailwind CSS:</strong> Sleek dark-mode glassmorphic interface with stage contrast presets.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CTA Section -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="cta">
+        <div class="cta-bg">
+            <div class="orb orb-4"></div>
+            <div class="orb orb-5"></div>
+        </div>
+        <div class="section-inner">
+            <h2>Ready to transform your presentations?</h2>
+            <p>Presenter Overlay is open-source and ready for developers.</p>
+            <div class="cta-actions">
+                <a href="https://github.com/ailooplabs/presenter-overlay" target="_blank" rel="noopener"
+                    class="btn btn-primary btn-lg">
+                    Clone on GitHub ↗
+                </a>
+                <a href="index.html#products" class="btn btn-ghost">Explore More Products →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- Footer -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <span>© 2026 AILoopLabs LLC</span> · Built with 💜 for developers
+            </div>
+            <div class="footer-right">
+                <a href="index.html">Home</a>
+                <a href="presenter-overlay.html">Presenter Overlay</a>
+                <a href="clipvault.html">ClipVault</a>
+                <a href="https://github.com/ailooplabs/presenter-overlay" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .doc-card, .use-case-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>
