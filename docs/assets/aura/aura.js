@@ -107,7 +107,8 @@
     function completeSeek(scene) {
       const limit = Number.isFinite(video.duration) ? Math.max(0, video.duration - .05) : scene.start;
       try {
-        video.currentTime = Math.min(scene.start, limit);
+        // Land inside the scene rather than on the previous segment's final frame.
+        video.currentTime = Math.min(scene.start + .12, limit);
         video.focus({ preventScroll: true });
         video.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'center' });
         status.textContent = `Moved to ${timestamp(scene.start)}: ${scene.title}. ${video.paused ? 'Press Play when ready.' : 'Playback continues.'}`;
