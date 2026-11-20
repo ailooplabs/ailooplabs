@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="AILoopLabs — Premium tools built for developers. Productivity, AI, data, and DevOps without compromises.">
+        content="AILoopLabs builds useful apps for everyday life and focused work. Explore Aura TV Remote, ClipVault, Presenter Overlay and developer tools.">
     <meta name="keywords"
-        content="developer tools, AI, productivity, data engineering, devops, commercial software">
+        content="Aura TV Remote, Android, useful apps, clipboard manager, presentation tools, developer tools">
     <meta name="author" content="AILoopLabs">
-    <meta property="og:title" content="AILoopLabs — Premium Tools for Developers">
-    <meta property="og:description" content="High-performance developer tools. No vendor lock-in. Just ship.">
+    <meta property="og:title" content="AILoopLabs — Useful Apps for Life &amp; Work">
+    <meta property="og:description" content="Everyday utilities and focused tools. Explore Aura TV Remote, ClipVault and Presenter Overlay.">
     <meta property="og:type" content="website">
-    <title>AILoopLabs — Premium Tools for Developers</title>
+    <title>AILoopLabs — Useful Apps for Life &amp; Work</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
@@ -23,22 +23,25 @@
     <link rel="stylesheet" href="ailooplabs.css">
 </head>
 
-<body>
+<body class="home-page" id="top">
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- ═══ Navigation ═══ -->
     <nav class="nav" id="nav">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">
+            <a href="#top" class="nav-logo">
                 <div class="logo-icon">A</div>
                 AILoopLabs
             </a>
             <div class="nav-links">
                 <a href="#products">Products</a>
+                <a href="aura-tv-remote.html">Aura</a>
                 <a href="#why">Why Choose Us</a>
                 <a href="#cta" class="btn-nav-cta">Get Started</a>
             </div>
         </div>
     </nav>
 
+    <main id="main">
     <!-- ═══ Hero Section ═══ -->
     <section class="hero">
         <div class="hero-bg">
@@ -47,13 +50,13 @@
             <div class="orb orb-3"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge">Privacy-First · Native Performance · Secure</div>
-            <h1>Build better with<br><span class="gradient-text">premium developer tools.</span></h1>
-            <p class="hero-subtitle">AILoopLabs crafts high-performance developer tools — from presentation teleprompters
-                to clipboard managers and AI pipelines. No vendor lock-in, no telemetry, no compromises.</p>
+            <div class="hero-badge">Everyday Utilities · Productivity · Developer Tools</div>
+            <h1>A little less friction.<br><span class="gradient-text">More room for what matters.</span></h1>
+            <p class="hero-subtitle">Useful apps for life and work — from a TV remote on your phone to clipboard
+                tools and presentation support on your desktop. Find the tool that fits your day.</p>
             <div class="hero-actions">
                 <a href="#products" class="btn btn-primary">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
                         <rect x="3" y="3" width="7" height="7" />
                         <rect x="14" y="3" width="7" height="7" />
                         <rect x="3" y="14" width="7" height="7" />
@@ -61,11 +64,11 @@
                     </svg>
                     Explore Products
                 </a>
-                <a href="presenter-overlay.html" class="btn btn-ghost">
-                    Presenter Overlay 🎭 →
+                <a href="aura-tv-remote.html" class="btn btn-ghost home-aura-link">
+                    Meet Aura TV Remote
                 </a>
                 <a href="clipvault.html" class="btn btn-ghost">
-                    ClipVault 📋 →
+                    Explore ClipVault
                 </a>
             </div>
         </div>
@@ -75,20 +78,20 @@
     <section class="stats-bar">
         <div class="stats-inner">
             <div class="stat">
-                <div class="stat-value"><span class="gradient-text">6+</span></div>
-                <div class="stat-label">Developer Tools</div>
+                <div class="stat-value">Everyday &amp; work</div>
+                <div class="stat-label">Apps with a clear purpose</div>
             </div>
             <div class="stat">
-                <div class="stat-value"><span class="gradient-text">100%</span></div>
-                <div class="stat-label">Secure & Private</div>
+                <div class="stat-value">Desktop &amp; Android</div>
+                <div class="stat-label">Availability varies by product</div>
             </div>
             <div class="stat">
-                <div class="stat-value"><span class="gradient-text">0</span></div>
-                <div class="stat-label">Telemetry & Tracking</div>
+                <div class="stat-value">Privacy details</div>
+                <div class="stat-label">Explained for each product</div>
             </div>
             <div class="stat">
-                <div class="stat-value"><span class="gradient-text">∞</span></div>
-                <div class="stat-label">Hours Saved</div>
+                <div class="stat-value">Guides &amp; support</div>
+                <div class="stat-label">Help getting started</div>
             </div>
         </div>
     </section>
@@ -98,10 +101,25 @@
         <div class="section-inner">
             <div class="section-header">
                 <span class="section-label">Products</span>
-                <h2>Tools that respect<br>your workflow.</h2>
-                <p>Every product is privacy-first, fast, and built to solve real developer pain points.</p>
+                <h2>Small tools.<br>Useful possibilities.</h2>
+                <p>Explore everyday utilities, focused desktop apps and tools for technical work.</p>
             </div>
             <div class="products-grid">
+
+                <article class="product-card aura-product-card">
+                    <div class="product-card-header">
+                        <div class="product-icon aura-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="4"/><circle cx="12" cy="8" r="2"/><path d="M10 15h4M12 13v4"/></svg></div>
+                        <h3>Aura TV Remote</h3>
+                        <span class="product-status status-soon">Listing pending</span>
+                    </div>
+                    <div class="product-card-body">
+                        <p>A free Android remote for compatible TVs, with local discovery, a touchpad and saved TVs.
+                            Explore actual app UI in narrated example walkthroughs. Features vary by model.</p>
+                        <div class="product-tags"><span class="product-tag">Android</span><span class="product-tag">TV Remote</span><span class="product-tag">Free</span><span class="product-tag">English Video Guide</span></div>
+                        <p class="aura-release-note">Release submitted — public listing pending.</p>
+                    </div>
+                    <div class="product-card-footer"><a href="aura-tv-remote.html" class="product-link">Explore Aura</a><a href="aura-tv-remote-guide.html" class="product-link">Watch quick start</a></div>
+                </article>
 
                 <!-- Product 1: Presenter Overlay -->
                 <div class="product-card">
@@ -122,7 +140,7 @@
                         </div>
                     </div>
                     <div class="product-card-footer">
-                        <a href="presenter-overlay.html" class="product-link">Learn More →</a>
+                        <a href="presenter-overlay.html" class="product-link">Learn More</a>
                         <span class="product-stars">⭐ Featured</span>
                     </div>
                 </div>
@@ -145,7 +163,7 @@
                         </div>
                     </div>
                     <div class="product-card-footer">
-                        <a href="clipvault.html" class="product-link">Learn More →</a>
+                        <a href="clipvault.html" class="product-link">Learn More</a>
                         <span class="product-stars">⭐ Popular</span>
                     </div>
                 </div>
@@ -168,7 +186,7 @@
                         </div>
                     </div>
                     <div class="product-card-footer">
-                        <a href="#" class="product-link">View Project →</a>
+                        <a href="mailto:ailooplabs.pro@gmail.com?subject=WatchTower%20information" class="product-link">Ask about WatchTower</a>
                         <span class="product-stars">📈 Growing</span>
                     </div>
                 </div>
@@ -183,38 +201,38 @@
             <div class="section-header">
                 <span class="section-label">Why Choose Us</span>
                 <h2>We believe in<br><span class="gradient-text">respecting your data.</span></h2>
-                <p>Our tools are crafted to be fast, private, and reliable. Here's why professionals choose AILoopLabs.</p>
+                <p>Clear product details help you choose what belongs in your day.</p>
             </div>
             <div class="why-grid">
                 <div class="why-card">
                     <div class="why-emoji">🔓</div>
-                    <h3>No Vendor Lock-in</h3>
-                    <p>Fork it, modify it, self-host it. Your tools should work for you, not the other way around.</p>
+                    <h3>Know What You’re Getting</h3>
+                    <p>Check each product’s platform, availability and licensing details before you get started.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-emoji">🛡️</div>
-                    <h3>Privacy by Design</h3>
-                    <p>Zero telemetry, no cloud calls, no analytics. Your data stays on your machine. Period.</p>
+                    <h3>Product-Specific Privacy</h3>
+                    <p>Data practices depend on the app and optional features you use. Read <a href="aura-privacy.html">Aura’s privacy policy</a> for local TV control and optional speech processing.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-emoji">🤝</div>
-                    <h3>Built for Professionals</h3>
-                    <p>Designed with real-world developer workflows in mind. Tools that just work.</p>
+                    <h3>For Life and Work</h3>
+                    <p>Everyday TV control, clipboard organization and presentation tools, each with a focused purpose.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-emoji">⚡</div>
-                    <h3>Built for Speed</h3>
-                    <p>Lean, opinionated, and fast. No bloat, no unnecessary abstractions, no enterprise overhead.</p>
+                    <h3>Focused Experiences</h3>
+                    <p>Explore the controls and features on each product page to see how they fit the task at hand.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-emoji">⚙️</div>
-                    <h3>Seamless Workflow</h3>
-                    <p>Native integration with your operating system. Designed to get out of your way and let you focus.</p>
+                    <h3>See It Before You Start</h3>
+                    <p>Follow <a href="aura-tv-remote-guide.html">Aura’s narrated video guide</a>, with English captions, example app states and written setup steps.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-emoji">💜</div>
-                    <h3>Premium Support</h3>
-                    <p>Get reliable updates, dedicated support, and tools that evolve with your needs.</p>
+                    <h3>A Way to Reach Us</h3>
+                    <p>Have a product question? Contact <a href="mailto:ailooplabs.pro@gmail.com">ailooplabs.pro@gmail.com</a>.</p>
                 </div>
             </div>
         </div>
@@ -227,24 +245,28 @@
             <div class="orb orb-5"></div>
         </div>
         <div class="section-inner">
-            <h2>Ready to upgrade your workflow?</h2>
-            <p>Join professionals who are saving time and securing their data with our premium tools.</p>
+            <h2>Find something useful for your day.</h2>
+            <p>Explore the apps, check the details, and follow a guide when you need a hand.</p>
             <div class="cta-actions">
-                <a href="presenter-overlay.html" class="btn btn-primary">
-                    Get Presenter Overlay
+                <a href="aura-tv-remote-guide.html" class="btn btn-primary">
+                    Watch Aura’s quick start
                 </a>
-                <a href="#products" class="btn btn-ghost">Explore Details →</a>
+                <a href="#products" class="btn btn-ghost">Explore products</a>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- ═══ Footer ═══ -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-left">
-                <span>© 2026 AILoopLabs LLC</span> · Made with 💜 for developers
+                <span>© 2026 AILoopLabs LLC</span> · Useful apps for life and work
             </div>
             <div class="footer-right">
+                <a href="aura-tv-remote.html">Aura TV Remote</a>
+                <a href="aura-tv-remote-guide.html">Aura guide</a>
+                <a href="aura-privacy.html">Aura privacy</a>
                 <a href="presenter-overlay.html">Presenter Overlay</a>
                 <a href="clipvault.html">ClipVault</a>
                 <a href="https://github.com/ailooplabs/presenter-overlay" target="_blank" rel="noopener">GitHub</a>
@@ -259,27 +281,6 @@
             nav.classList.toggle('scrolled', window.scrollY > 20);
         });
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-                e.preventDefault();
-                const target = document.querySelector(a.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-
-        // Animate elements on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.product-card, .why-card').forEach(el => {
-            observer.observe(el);
-        });
     </script>
 </body>
 

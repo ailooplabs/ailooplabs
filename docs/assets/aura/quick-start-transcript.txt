@@ -1,0 +1,38 @@
+Aura TV Remote - Quick Start
+English narration and captions. Example app states; no physical TV recording.
+
+00:00:00.000  Start on the same Wi-Fi
+Welcome to Aura Remote, a product by AILoopLabs. Turn on your TV and connect your phone to the same trusted Wi-Fi network.
+
+00:00:10.800  Search for your television
+Read the setup tips, then choose Search for TVs. This walkthrough uses example TV data. Follow the prompts for your own television.
+
+00:00:21.600  Select your TV
+Choose your TV from the list and start its connection process. Check the name and brand. Demo TV is only an example.
+
+00:00:32.400  Follow the TV’s prompt
+Depending on the brand, approve a TV prompt or enter its required code. Roku does not need a PIN. Wait for Aura to confirm authorization.
+
+00:00:43.933  Name, assign and save
+After pairing is confirmed, name the TV, choose a room, and select Save and Open Remote. Your saved profile is stored on this phone.
+
+00:00:54.733  Navigate with arrows and OK
+Use the directional arrows to move and OK to select. Scroll for Back, Home, volume and channel controls. Check the television for each result.
+
+00:01:05.867  Try the touchpad
+Select Swipe Touchpad to use gestures. Swipe to navigate, tap to select, and double-tap to go back. Supported behavior depends on the TV.
+
+00:01:16.667  Explore TV shortcuts
+Movie Center contains search, playback, app, and input requests. Aura does not supply streaming content. Availability depends on your TV and its services.
+
+00:01:28.600  Type or choose voice
+Open the keyboard or microphone button to send text. Voice is optional. Read its explanation before allowing microphone access; typed input is also available.
+
+00:01:41.000  Find your saved TVs
+Use TVs and Setup to switch televisions, filter rooms, add devices, or remove a saved TV. Removing a device also clears its saved pairing credentials.
+
+00:01:53.767  Use the Brand Guide
+Open Brand Guide for setup instructions. Native Android and Google TV pairing is not supported in this version. Controls vary by model and protocol.
+
+00:02:05.767  Help is always nearby
+Use Privacy and Info for disclosures and notices. Visit the Aura website for the complete manual and support. You are ready to try the basic remote controls.
