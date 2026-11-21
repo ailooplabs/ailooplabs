@@ -7,67 +7,67 @@
   "gallery": [
     {
       "screenshot": "screens/01-welcome.png",
-      "title": "Welcome"
+      "title": "Welcome to GlintBeam"
     },
     {
       "screenshot": "screens/02-welcome-bottom.png",
-      "title": "Welcome Bottom"
+      "title": "First-use tips"
     },
     {
       "screenshot": "screens/03-tutorial-controls.png",
-      "title": "Tutorial Controls"
+      "title": "Control modes"
     },
     {
       "screenshot": "screens/04-tutorial-search.png",
-      "title": "Tutorial Search"
+      "title": "Search and voice introduction"
     },
     {
       "screenshot": "screens/05-start-search.png",
-      "title": "Start Search"
+      "title": "Start TV discovery"
     },
     {
       "screenshot": "screens/06-discovery-empty.png",
-      "title": "Discovery Empty"
+      "title": "No TVs found"
     },
     {
       "screenshot": "screens/07-discovery-found.png",
-      "title": "Discovery Found"
+      "title": "Select a discovered TV"
     },
     {
       "screenshot": "screens/08-manual-ip.png",
-      "title": "Manual Ip"
+      "title": "Connect by TV address"
     },
     {
       "screenshot": "screens/09-pairing-approval.png",
-      "title": "Pairing Approval"
+      "title": "TV approval"
     },
     {
       "screenshot": "screens/10-pairing-pin.png",
-      "title": "Pairing Pin"
+      "title": "TV PIN or key"
     },
     {
       "screenshot": "screens/11-pairing-retry.png",
-      "title": "Pairing Retry"
+      "title": "Retry authorization"
     },
     {
       "screenshot": "screens/12-label-tv.png",
-      "title": "Label Tv"
+      "title": "Name your TV"
     },
     {
       "screenshot": "screens/12b-save-tv.png",
-      "title": "Save Tv"
+      "title": "Save your TV"
     },
     {
       "screenshot": "screens/13-remote.png",
-      "title": "Remote"
+      "title": "Directional remote"
     },
     {
       "screenshot": "screens/14-touchpad.png",
-      "title": "Touchpad"
+      "title": "Swipe touchpad"
     },
     {
       "screenshot": "screens/15-remote-lower.png",
-      "title": "Remote Lower"
+      "title": "More remote controls"
     },
     {
       "screenshot": "screens/16-movie-center.png",
@@ -75,19 +75,19 @@
     },
     {
       "screenshot": "screens/17-movie-shortcuts.png",
-      "title": "Movie Shortcuts"
+      "title": "App shortcuts"
     },
     {
       "screenshot": "screens/18-inputs.png",
-      "title": "Inputs"
+      "title": "TV inputs"
     },
     {
       "screenshot": "screens/19-devices.png",
-      "title": "Devices"
+      "title": "Saved TVs and rooms"
     },
     {
       "screenshot": "screens/20-multiple-tvs.png",
-      "title": "Multiple Tvs"
+      "title": "Switch between TVs"
     },
     {
       "screenshot": "screens/21-brand-guide.png",
@@ -95,67 +95,67 @@
     },
     {
       "screenshot": "screens/22-brand-guide-details.png",
-      "title": "Brand Guide Details"
+      "title": "Brand preparation checklist"
     },
     {
       "screenshot": "screens/22-guide-android_tv.png",
-      "title": "Guide Android_Tv"
+      "title": "Android / Google TV limitation"
     },
     {
       "screenshot": "screens/22-guide-lg.png",
-      "title": "Guide Lg"
+      "title": "LG setup guide"
     },
     {
       "screenshot": "screens/22-guide-roku.png",
-      "title": "Guide Roku"
+      "title": "Roku setup guide"
     },
     {
       "screenshot": "screens/22-guide-sony.png",
-      "title": "Guide Sony"
+      "title": "Sony setup guide"
     },
     {
       "screenshot": "screens/22-guide-vizio.png",
-      "title": "Guide Vizio"
+      "title": "Vizio setup guide"
     },
     {
       "screenshot": "screens/23-keyboard.png",
-      "title": "Keyboard"
+      "title": "Keyboard and voice"
     },
     {
       "screenshot": "screens/23b-voice-consent.png",
-      "title": "Voice Consent"
+      "title": "Microphone explanation"
     },
     {
       "screenshot": "screens/24-number-pad.png",
-      "title": "Number Pad"
+      "title": "Number pad and color keys"
     },
     {
       "screenshot": "screens/25-add-brand.png",
-      "title": "Add Brand"
+      "title": "Add TV: choose a brand"
     },
     {
       "screenshot": "screens/26-add-discovery.png",
-      "title": "Add Discovery"
+      "title": "Add TV: discovery"
     },
     {
       "screenshot": "screens/27-add-auth.png",
-      "title": "Add Auth"
+      "title": "Add TV: authorization"
     },
     {
       "screenshot": "screens/28-add-checks.png",
-      "title": "Add Checks"
+      "title": "Add TV: compatibility checks"
     },
     {
       "screenshot": "screens/29-privacy.png",
-      "title": "Privacy"
+      "title": "Privacy information"
     },
     {
       "screenshot": "screens/30-usage.png",
-      "title": "Usage"
+      "title": "Usage information"
     },
     {
       "screenshot": "screens/31-licenses.png",
-      "title": "Licenses"
+      "title": "Software and font notices"
     }
   ],
   "quick": {
@@ -164,7 +164,7 @@
       {
         "id": "quick-00",
         "title": "Start on the same Wi-Fi",
-        "narration": "Welcome to GlintBeam, a product by A. I Looplabs. Turn on your TV and connect your phone to the same trusted Wi-Fi network.",
+        "narration": "Welcome to GlintBeam, a product by AILoopLabs. Turn on your TV and connect your phone to the same trusted Wi-Fi network.",
         "screenshot": "screens/01-welcome.png",
         "cursor": [
           0.7236111,
@@ -175,7 +175,7 @@
           "x": 0.7236111,
           "y": 0.1375
         },
-        "audio_duration": 8.652625,
+        "audio_duration": 8.647708,
         "duration": 10.8,
         "start": 0,
         "end": 10.8
@@ -392,12 +392,12 @@
     ]
   },
   "full": {
-    "duration": 583.756553,
+    "duration": 583.989887,
     "scenes": [
       {
         "id": "full-00",
         "title": "Meet GlintBeam",
-        "narration": "Start with your phone and television on the same trusted Wi-Fi network. Turn the television on. GlintBeam is a product by A. I Looplabs. This guide uses labeled example TV data.",
+        "narration": "Start with your phone and television on the same trusted Wi-Fi network. Turn the television on. GlintBeam is a product by AILoopLabs. This guide uses labeled example TV data.",
         "screenshot": "screens/01-welcome.png",
         "cursor": [
           0.7236111,
@@ -408,10 +408,10 @@
           "x": 0.7236111,
           "y": 0.1375
         },
-        "audio_duration": 12.756625,
-        "duration": 13.966667,
+        "audio_duration": 12.483333,
+        "duration": 13.7,
         "start": 0,
-        "end": 13.967
+        "end": 13.7
       },
       {
         "id": "full-01",
@@ -429,8 +429,8 @@
         },
         "audio_duration": 13.368667,
         "duration": 14.6,
-        "start": 13.967,
-        "end": 28.567
+        "start": 13.7,
+        "end": 28.3
       },
       {
         "id": "full-02",
@@ -444,8 +444,8 @@
         "control_target": null,
         "audio_duration": 12.382667,
         "duration": 13.6,
-        "start": 28.567,
-        "end": 42.167
+        "start": 28.3,
+        "end": 41.9
       },
       {
         "id": "full-03",
@@ -459,8 +459,8 @@
         "control_target": null,
         "audio_duration": 14.772625,
         "duration": 16.0,
-        "start": 42.167,
-        "end": 58.167
+        "start": 41.9,
+        "end": 57.9
       },
       {
         "id": "full-04",
@@ -478,8 +478,8 @@
         },
         "audio_duration": 11.721333,
         "duration": 12.933333,
-        "start": 58.167,
-        "end": 71.1
+        "start": 57.9,
+        "end": 70.833
       },
       {
         "id": "full-05",
@@ -497,8 +497,8 @@
         },
         "audio_duration": 13.408,
         "duration": 14.633333,
-        "start": 71.1,
-        "end": 85.733
+        "start": 70.833,
+        "end": 85.467
       },
       {
         "id": "full-06",
@@ -516,8 +516,8 @@
         },
         "audio_duration": 11.924625,
         "duration": 13.133333,
-        "start": 85.733,
-        "end": 98.867
+        "start": 85.467,
+        "end": 98.6
       },
       {
         "id": "full-07",
@@ -535,8 +535,8 @@
         },
         "audio_duration": 12.254667,
         "duration": 13.466667,
-        "start": 98.867,
-        "end": 112.333
+        "start": 98.6,
+        "end": 112.067
       },
       {
         "id": "full-08",
@@ -554,8 +554,8 @@
         },
         "audio_duration": 13.978625,
         "duration": 15.2,
-        "start": 112.333,
-        "end": 127.533
+        "start": 112.067,
+        "end": 127.267
       },
       {
         "id": "full-09",
@@ -573,8 +573,8 @@
         },
         "audio_duration": 14.112,
         "duration": 15.333333,
-        "start": 127.533,
-        "end": 142.867
+        "start": 127.267,
+        "end": 142.6
       },
       {
         "id": "full-10",
@@ -592,8 +592,8 @@
         },
         "audio_duration": 12.725333,
         "duration": 13.933333,
-        "start": 142.867,
-        "end": 156.8
+        "start": 142.6,
+        "end": 156.533
       },
       {
         "id": "full-11",
@@ -611,8 +611,8 @@
         },
         "audio_duration": 14.463292,
         "duration": 15.666667,
-        "start": 156.8,
-        "end": 172.467
+        "start": 156.533,
+        "end": 172.2
       },
       {
         "id": "full-12",
@@ -630,8 +630,8 @@
         },
         "audio_duration": 13.750667,
         "duration": 14.966667,
-        "start": 172.467,
-        "end": 187.433
+        "start": 172.2,
+        "end": 187.167
       },
       {
         "id": "full-13",
@@ -649,8 +649,8 @@
         },
         "audio_duration": 13.638625,
         "duration": 14.866667,
-        "start": 187.433,
-        "end": 202.3
+        "start": 187.167,
+        "end": 202.033
       },
       {
         "id": "full-14",
@@ -668,8 +668,8 @@
         },
         "audio_duration": 14.004,
         "duration": 15.233333,
-        "start": 202.3,
-        "end": 217.533
+        "start": 202.033,
+        "end": 217.267
       },
       {
         "id": "full-15",
@@ -687,8 +687,8 @@
         },
         "audio_duration": 15.139333,
         "duration": 16.366667,
-        "start": 217.533,
-        "end": 233.9
+        "start": 217.267,
+        "end": 233.633
       },
       {
         "id": "full-16",
@@ -706,8 +706,8 @@
         },
         "audio_duration": 13.745292,
         "duration": 14.966667,
-        "start": 233.9,
-        "end": 248.867
+        "start": 233.633,
+        "end": 248.6
       },
       {
         "id": "full-17",
@@ -721,8 +721,8 @@
         "control_target": null,
         "audio_duration": 14.463292,
         "duration": 15.666667,
-        "start": 248.867,
-        "end": 264.533
+        "start": 248.6,
+        "end": 264.267
       },
       {
         "id": "full-18",
@@ -736,8 +736,8 @@
         "control_target": null,
         "audio_duration": 13.322667,
         "duration": 14.533333,
-        "start": 264.533,
-        "end": 279.067
+        "start": 264.267,
+        "end": 278.8
       },
       {
         "id": "full-19",
@@ -755,8 +755,8 @@
         },
         "audio_duration": 14.420625,
         "duration": 15.633333,
-        "start": 279.067,
-        "end": 294.7
+        "start": 278.8,
+        "end": 294.433
       },
       {
         "id": "full-20",
@@ -770,8 +770,8 @@
         "control_target": null,
         "audio_duration": 15.699333,
         "duration": 16.9,
-        "start": 294.7,
-        "end": 311.6
+        "start": 294.433,
+        "end": 311.333
       },
       {
         "id": "full-21",
@@ -785,8 +785,8 @@
         "control_target": null,
         "audio_duration": 13.812,
         "duration": 15.033333,
-        "start": 311.6,
-        "end": 326.633
+        "start": 311.333,
+        "end": 326.367
       },
       {
         "id": "full-22",
@@ -804,8 +804,8 @@
         },
         "audio_duration": 13.779333,
         "duration": 15.0,
-        "start": 326.633,
-        "end": 341.633
+        "start": 326.367,
+        "end": 341.367
       },
       {
         "id": "full-23",
@@ -823,8 +823,8 @@
         },
         "audio_duration": 12.977333,
         "duration": 14.2,
-        "start": 341.633,
-        "end": 355.833
+        "start": 341.367,
+        "end": 355.567
       },
       {
         "id": "full-24",
@@ -842,8 +842,8 @@
         },
         "audio_duration": 14.356625,
         "duration": 15.566667,
-        "start": 355.833,
-        "end": 371.4
+        "start": 355.567,
+        "end": 371.133
       },
       {
         "id": "full-25",
@@ -861,8 +861,8 @@
         },
         "audio_duration": 15.221333,
         "duration": 16.433333,
-        "start": 371.4,
-        "end": 387.833
+        "start": 371.133,
+        "end": 387.567
       },
       {
         "id": "full-26",
@@ -880,8 +880,8 @@
         },
         "audio_duration": 14.249958,
         "duration": 15.466667,
-        "start": 387.833,
-        "end": 403.3
+        "start": 387.567,
+        "end": 403.033
       },
       {
         "id": "full-27",
@@ -899,8 +899,8 @@
         },
         "audio_duration": 13.375292,
         "duration": 14.6,
-        "start": 403.3,
-        "end": 417.9
+        "start": 403.033,
+        "end": 417.633
       },
       {
         "id": "full-28",
@@ -918,8 +918,8 @@
         },
         "audio_duration": 16.629333,
         "duration": 17.833333,
-        "start": 417.9,
-        "end": 435.733
+        "start": 417.633,
+        "end": 435.467
       },
       {
         "id": "full-29",
@@ -933,8 +933,8 @@
         "control_target": null,
         "audio_duration": 15.679292,
         "duration": 16.9,
-        "start": 435.733,
-        "end": 452.633
+        "start": 435.467,
+        "end": 452.367
       },
       {
         "id": "full-30",
@@ -948,8 +948,8 @@
         "control_target": null,
         "audio_duration": 16.096,
         "duration": 17.3,
-        "start": 452.633,
-        "end": 469.933
+        "start": 452.367,
+        "end": 469.667
       },
       {
         "id": "full-31",
@@ -963,8 +963,8 @@
         "control_target": null,
         "audio_duration": 14.143292,
         "duration": 15.366667,
-        "start": 469.933,
-        "end": 485.3
+        "start": 469.667,
+        "end": 485.033
       },
       {
         "id": "full-32",
@@ -978,8 +978,8 @@
         "control_target": null,
         "audio_duration": 15.980667,
         "duration": 17.2,
-        "start": 485.3,
-        "end": 502.5
+        "start": 485.033,
+        "end": 502.233
       },
       {
         "id": "full-33",
@@ -993,8 +993,8 @@
         "control_target": null,
         "audio_duration": 15.565333,
         "duration": 16.766667,
-        "start": 502.5,
-        "end": 519.267
+        "start": 502.233,
+        "end": 519.0
       },
       {
         "id": "full-34",
@@ -1012,13 +1012,13 @@
         },
         "audio_duration": 13.931333,
         "duration": 15.133333,
-        "start": 519.267,
-        "end": 534.4
+        "start": 519.0,
+        "end": 534.133
       },
       {
         "id": "full-35",
         "title": "Find privacy information",
-        "narration": "Privacy and Info is available at the top of the app, including during setup. Read how local profiles, TV requests, optional speech processing, and support messages are handled. Microphone audio is not received by A. I Looplabs.",
+        "narration": "Privacy and Info is available at the top of the app, including during setup. Read how local profiles, TV requests, optional speech processing, and support messages are handled. Microphone audio is not received by AILoopLabs.",
         "screenshot": "screens/29-privacy.png",
         "cursor": [
           0.16875,
@@ -1029,10 +1029,10 @@
           "x": 0.16875,
           "y": 0.16666667
         },
-        "audio_duration": 16.297958,
-        "duration": 17.5,
-        "start": 534.4,
-        "end": 551.9
+        "audio_duration": 16.799083,
+        "duration": 18.0,
+        "start": 534.133,
+        "end": 552.133
       },
       {
         "id": "full-36",
@@ -1050,8 +1050,8 @@
         },
         "audio_duration": 15.985333,
         "duration": 17.2,
-        "start": 551.9,
-        "end": 569.1
+        "start": 552.133,
+        "end": 569.333
       },
       {
         "id": "full-37",
@@ -1069,8 +1069,8 @@
         },
         "audio_duration": 13.406667,
         "duration": 14.633333,
-        "start": 569.1,
-        "end": 583.733
+        "start": 569.333,
+        "end": 583.967
       }
     ]
   }

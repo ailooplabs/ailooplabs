@@ -2,7 +2,7 @@ GlintBeam TV Remote - Quick Start
 English narration and captions. Legacy Android 1.0.2 example states; no physical TV recording.
 
 00:00:00.000  Start on the same Wi-Fi
-Welcome to GlintBeam, a product by A. I Looplabs. Turn on your TV and connect your phone to the same trusted Wi-Fi network.
+Welcome to GlintBeam, a product by AILoopLabs. Turn on your TV and connect your phone to the same trusted Wi-Fi network.
 
 00:00:10.800  Search for your television
 Read the setup tips, then choose Search for TVs. This walkthrough uses example TV data. Follow the prompts for your own television.

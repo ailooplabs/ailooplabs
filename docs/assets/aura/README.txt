@@ -1,7 +1,7 @@
 GlintBeam TV Remote manuals with earlier Aura Android UI examples
 Prepared November 19-20, 2026 for Aura 1.0.2 (4); narration and video canvas
-updated November 21, 2026 to GlintBeam. Company name is spoken with a short
-break as "A. I Looplabs" in the new narration.
+updated November 21, 2026 to GlintBeam. The company name is written as
+"AILoopLabs" and spoken as "A", 70 ms pause, "I", 70 ms pause, "Looplabs".
 Actual app UI rendered with example data; no physical TV recording or compatibility certification.
 English synthetic narration: Kokoro-82M v1.0, voice af_heart, generated locally.
 Model license: Apache-2.0. Runtime kokoro-onnx: MIT. No music or cloud voice service.

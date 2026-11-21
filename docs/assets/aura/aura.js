@@ -286,7 +286,7 @@
   }, true);
 
   if (manuals.length || document.querySelector('[data-screen-gallery]')) {
-    fetch(new URL('chapters.json?v=20261121b', assetBase), { credentials: 'same-origin' })
+    fetch(new URL('chapters.json?v=20261121c', assetBase), { credentials: 'same-origin' })
       .then(response => { if (!response.ok) throw new Error('Guide data unavailable'); return response.json(); })
       .then(data => {
         if (!data || typeof data !== 'object') return;
