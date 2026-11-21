@@ -1,368 +1,368 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:05.183
+00:00:00.000 --> 00:00:04.957
 Start with your phone and television on the same trusted Wi-Fi network.
 
-00:00:05.183 --> 00:00:06.862
+00:00:04.957 --> 00:00:06.563
 Turn the television on.
 
-00:00:06.862 --> 00:00:09.563
+00:00:06.563 --> 00:00:09.146
 GlintBeam is a product by AILoopLabs.
 
-00:00:09.563 --> 00:00:12.483
+00:00:09.146 --> 00:00:11.939
 This guide uses labeled example TV data.
 
-00:00:13.700 --> 00:00:17.462
+00:00:13.167 --> 00:00:16.929
 Read the first-use tips and select Next Tip to continue.
 
-00:00:17.462 --> 00:00:24.247
+00:00:16.929 --> 00:00:23.714
 These screenshots show example interface states, not a recording of a physical television responding.
 
-00:00:24.247 --> 00:00:27.069
+00:00:23.714 --> 00:00:26.535
 Supported controls depend on the TV model.
 
-00:00:28.300 --> 00:00:31.969
+00:00:27.767 --> 00:00:31.436
 GlintBeam offers a directional pad and a swipe touchpad.
 
-00:00:31.969 --> 00:00:34.328
+00:00:31.436 --> 00:00:33.794
 The setup tips introduce both modes.
 
-00:00:34.328 --> 00:00:40.683
+00:00:33.794 --> 00:00:40.149
 Later, you can switch between them on the Remote screen and use whichever feels more comfortable.
 
-00:00:41.900 --> 00:00:47.852
+00:00:41.367 --> 00:00:47.319
 The next tip introduces TV app shortcuts, typed searches, and optional voice input.
 
-00:00:47.852 --> 00:00:51.079
+00:00:47.319 --> 00:00:50.546
 GlintBeam sends requests to your selected TV.
 
-00:00:51.079 --> 00:00:56.673
+00:00:50.546 --> 00:00:56.139
 Streaming services may require their own accounts, payments, or subscriptions.
 
-00:00:57.900 --> 00:00:59.365
+00:00:57.367 --> 00:00:58.832
 Choose Search for TVs.
 
-00:00:59.365 --> 00:01:02.562
+00:00:58.832 --> 00:01:02.029
 Keep the phone and TV on the same local network.
 
-00:01:02.562 --> 00:01:05.426
+00:01:02.029 --> 00:01:04.892
 You can revisit the previous tip with Back.
 
-00:01:05.426 --> 00:01:09.621
+00:01:04.892 --> 00:01:09.088
 The tutorial checkbox controls whether these tips appear again.
 
-00:01:10.833 --> 00:01:16.935
+00:01:10.300 --> 00:01:16.401
 If discovery finds nothing, confirm the TV is on and connected to the same Wi-Fi.
 
-00:01:16.935 --> 00:01:18.215
+00:01:16.401 --> 00:01:17.682
 Try Rescan Wi-Fi.
 
-00:01:18.215 --> 00:01:24.241
+00:01:17.682 --> 00:01:23.708
 Guest networks or network isolation can prevent devices from finding each other.
 
-00:01:25.467 --> 00:01:30.960
+00:01:24.933 --> 00:01:30.427
 Select your television from the discovered list, then use the blue pairing button.
 
-00:01:30.960 --> 00:01:32.434
+00:01:30.427 --> 00:01:31.901
 Demo TV is an example.
 
-00:01:32.434 --> 00:01:37.391
+00:01:31.901 --> 00:01:36.858
 Confirm the name and brand belong to the television you intend to control.
 
-00:01:38.600 --> 00:01:42.796
+00:01:38.067 --> 00:01:42.263
 If discovery misses your TV, use the manual connection section.
 
-00:01:42.796 --> 00:01:47.591
+00:01:42.263 --> 00:01:47.058
 Choose its brand and enter the TV address shown in its network settings.
 
-00:01:47.591 --> 00:01:50.855
+00:01:47.058 --> 00:01:50.321
 Do not enter an address copied from this example.
 
-00:01:52.067 --> 00:01:57.025
+00:01:51.533 --> 00:01:56.491
 Some TVs, including Samsung, show an approval request on the television.
 
-00:01:57.025 --> 00:02:00.330
+00:01:56.491 --> 00:01:59.797
 Allow GlintBeam there and wait for confirmation.
 
-00:02:00.330 --> 00:02:06.045
+00:01:59.797 --> 00:02:05.512
 This is an illustrated app state; your actual television prompt may look different.
 
-00:02:07.267 --> 00:02:10.980
+00:02:06.733 --> 00:02:10.447
 Other televisions request a PIN or configured key.
 
-00:02:10.980 --> 00:02:16.699
+00:02:10.447 --> 00:02:16.166
 Enter the value from your television or its authorized settings, then verify.
 
-00:02:16.699 --> 00:02:21.379
+00:02:16.166 --> 00:02:20.845
 Never assume the sample code in a tutorial will pair a real TV.
 
-00:02:22.600 --> 00:02:26.418
+00:02:22.067 --> 00:02:25.884
 If authorization fails, the pairing screen stays open.
 
-00:02:26.418 --> 00:02:31.720
+00:02:25.884 --> 00:02:31.186
 Check the TV, request a new prompt, or go back and select the device again.
 
-00:02:31.720 --> 00:02:35.325
+00:02:31.186 --> 00:02:34.792
 A failed request does not mean the TV is connected.
 
-00:02:36.533 --> 00:02:43.042
+00:02:36.000 --> 00:02:42.508
 After the television confirms pairing, choose a recognizable name, such as Living Room TV.
 
-00:02:43.042 --> 00:02:47.164
+00:02:42.508 --> 00:02:46.631
 Assign a room so multiple televisions are easier to find.
 
-00:02:47.164 --> 00:02:50.997
+00:02:46.631 --> 00:02:50.463
 The saved profile remains in GlintBeam on this phone.
 
-00:02:52.200 --> 00:02:56.920
+00:02:51.667 --> 00:02:56.387
 Choose Save and Open Remote after pairing and naming your television.
 
-00:02:56.920 --> 00:02:59.315
+00:02:56.387 --> 00:02:58.781
 The app then opens the main remote.
 
-00:02:59.315 --> 00:03:05.951
+00:02:58.781 --> 00:03:05.417
 The example shown here illustrates the destination; it is not evidence of hardware compatibility.
 
-00:03:07.167 --> 00:03:11.923
+00:03:06.633 --> 00:03:11.389
 Tap the directional arrows to move through the television interface.
 
-00:03:11.923 --> 00:03:13.112
+00:03:11.389 --> 00:03:12.578
 Tap OK to select.
 
-00:03:13.112 --> 00:03:18.777
+00:03:12.578 --> 00:03:18.244
 The top row includes power, source, the number pad, and keyboard or voice access.
 
-00:03:18.777 --> 00:03:20.805
+00:03:18.244 --> 00:03:20.272
 Check the TV for each result.
 
-00:03:22.033 --> 00:03:23.566
+00:03:21.500 --> 00:03:23.033
 Choose Swipe Touchpad.
 
-00:03:23.566 --> 00:03:27.746
+00:03:23.033 --> 00:03:27.213
 Swipe to navigate, tap to select, and double-tap to go back.
 
-00:03:27.746 --> 00:03:36.037
+00:03:27.213 --> 00:03:35.504
 These gestures send navigation requests; smooth pointer movement and other behavior depend on the selected TV protocol.
 
-00:03:37.267 --> 00:03:44.688
+00:03:36.733 --> 00:03:44.155
 Scroll down the remote to reach Back, Home, Movies, Guide, Menu, volume, mute, and channel controls.
 
-00:03:44.688 --> 00:03:47.063
+00:03:44.155 --> 00:03:46.529
 Some controls depend on your TV.
 
-00:03:47.063 --> 00:03:52.406
+00:03:46.529 --> 00:03:51.873
 Displayed information is not a continuously synchronized TV status feed.
 
-00:03:53.633 --> 00:03:58.476
+00:03:53.100 --> 00:03:57.943
 Use the bottom Movie Center tab for TV search and playback requests.
 
-00:03:58.476 --> 00:04:02.749
+00:03:57.943 --> 00:04:02.216
 Type a movie, show, or actor and send the search to your TV.
 
-00:04:02.749 --> 00:04:07.379
+00:04:02.216 --> 00:04:06.845
 GlintBeam does not supply movies or guarantee automatic playback.
 
-00:04:08.600 --> 00:04:12.569
+00:04:08.067 --> 00:04:12.036
 Scroll within Movie Center to find app and input shortcuts.
 
-00:04:12.569 --> 00:04:16.874
+00:04:12.036 --> 00:04:16.341
 A request works only where the selected TV protocol supports it.
 
-00:04:16.874 --> 00:04:23.063
+00:04:16.341 --> 00:04:22.530
 An app tile does not include a streaming subscription or guarantee the service is installed.
 
-00:04:24.267 --> 00:04:26.756
+00:04:23.733 --> 00:04:26.222
 Input controls vary by television.
 
-00:04:26.756 --> 00:04:32.758
+00:04:26.222 --> 00:04:32.225
 Some models can select an input directly; others can only open the TV source menu.
 
-00:04:32.758 --> 00:04:37.589
+00:04:32.225 --> 00:04:37.056
 Check the actual TV screen and make any remaining selection there.
 
-00:04:38.800 --> 00:04:42.641
+00:04:38.267 --> 00:04:42.107
 Open the microphone or keyboard button on the remote.
 
-00:04:42.641 --> 00:04:45.902
+00:04:42.107 --> 00:04:45.368
 Type a search or other TV text, then send it.
 
-00:04:45.902 --> 00:04:53.221
+00:04:45.368 --> 00:04:52.687
 Use ordinary non-sensitive text: some television control protocols use unencrypted local connections.
 
-00:04:54.433 --> 00:04:56.123
+00:04:53.900 --> 00:04:55.590
 Voice input is optional.
 
-00:04:56.123 --> 00:04:59.643
+00:04:55.590 --> 00:04:59.110
 Read the microphone explanation before continuing.
 
-00:04:59.643 --> 00:05:04.008
+00:04:59.110 --> 00:05:03.474
 Your Android speech provider may process audio on its servers.
 
-00:05:04.008 --> 00:05:10.133
+00:05:03.474 --> 00:05:09.599
 You can choose typed input instead; basic remote buttons do not need microphone access.
 
-00:05:11.333 --> 00:05:15.193
+00:05:10.800 --> 00:05:14.659
 The dial-pad button opens channel numbers and color keys.
 
-00:05:15.193 --> 00:05:18.104
+00:05:14.659 --> 00:05:17.571
 Use these only where your TV supports them.
 
-00:05:18.104 --> 00:05:20.812
+00:05:17.571 --> 00:05:20.279
 Close the sheet to return to the remote.
 
-00:05:20.812 --> 00:05:25.145
+00:05:20.279 --> 00:05:24.612
 Sending a number does not guarantee a particular channel exists.
 
-00:05:26.367 --> 00:05:30.091
+00:05:25.833 --> 00:05:29.557
 Open TVs and Setup to see saved devices and rooms.
 
-00:05:30.091 --> 00:05:32.325
+00:05:29.557 --> 00:05:31.792
 Select a TV to make it active.
 
-00:05:32.325 --> 00:05:34.262
+00:05:31.792 --> 00:05:33.729
 The heart marks favorites.
 
-00:05:34.262 --> 00:05:40.146
+00:05:33.729 --> 00:05:39.613
 Removing a TV deletes its saved profile and pairing credentials from GlintBeam.
 
-00:05:41.367 --> 00:05:48.104
+00:05:40.833 --> 00:05:47.570
 With more than one saved TV, use the top device selector or room filters to find the right one.
 
-00:05:48.104 --> 00:05:54.344
+00:05:47.570 --> 00:05:53.811
 Always check which TV is active before sending power, volume, search, or other commands.
 
-00:05:55.567 --> 00:05:58.506
+00:05:55.033 --> 00:05:57.973
 Choose Add TV to open the four-step wizard.
 
-00:05:58.506 --> 00:06:02.061
+00:05:57.973 --> 00:06:01.528
 Select the brand and read its preparation checklist.
 
-00:06:02.061 --> 00:06:06.573
+00:06:01.528 --> 00:06:06.040
 Prepare the television’s network-control settings before scanning.
 
-00:06:06.573 --> 00:06:09.923
+00:06:06.040 --> 00:06:09.390
 The wizard is separate from the initial tutorial.
 
-00:06:11.133 --> 00:06:15.234
+00:06:10.600 --> 00:06:14.701
 The wizard shows discovered devices for the selected brand.
 
-00:06:15.234 --> 00:06:20.099
+00:06:14.701 --> 00:06:19.566
 Select the intended television, or enter its network address manually.
 
-00:06:20.099 --> 00:06:26.355
+00:06:19.566 --> 00:06:25.821
 Example names and addresses shown in this guide must be replaced with your own TV details.
 
-00:06:27.567 --> 00:06:32.045
+00:06:27.033 --> 00:06:31.512
 Follow the authorization instructions for the selected television.
 
-00:06:32.045 --> 00:06:35.031
+00:06:31.512 --> 00:06:34.498
 Allow its prompt or enter its required code.
 
-00:06:35.031 --> 00:06:38.084
+00:06:34.498 --> 00:06:37.551
 Wait for a verified result before proceeding.
 
-00:06:38.084 --> 00:06:41.817
+00:06:37.551 --> 00:06:41.283
 Do not treat a pending handshake as successful pairing.
 
-00:06:43.033 --> 00:06:49.555
+00:06:42.500 --> 00:06:49.021
 In the compatibility step, try the displayed test buttons and check the television for the result.
 
-00:06:49.555 --> 00:06:51.950
+00:06:49.021 --> 00:06:51.417
 Name the device and assign its room.
 
-00:06:51.950 --> 00:06:56.409
+00:06:51.417 --> 00:06:55.875
 Only save once the app’s required verification steps are satisfied.
 
-00:06:57.633 --> 00:07:03.655
+00:06:57.100 --> 00:07:03.122
 The Brand Guide tab contains preparation instructions and protocol-specific information.
 
-00:07:03.655 --> 00:07:05.366
+00:07:03.122 --> 00:07:04.833
 Select your manufacturer.
 
-00:07:05.366 --> 00:07:10.636
+00:07:04.833 --> 00:07:10.102
 Use your television’s own settings and documentation where menu names differ.
 
-00:07:10.636 --> 00:07:14.263
+00:07:10.102 --> 00:07:13.729
 This guide does not certify every model from a brand.
 
-00:07:15.467 --> 00:07:21.419
+00:07:14.933 --> 00:07:20.886
 For LG, follow the TV’s registration or pairing prompt and wait for authorization.
 
-00:07:21.419 --> 00:07:24.758
+00:07:20.886 --> 00:07:24.225
 Features vary by model and supported protocol.
 
-00:07:24.758 --> 00:07:31.146
+00:07:24.225 --> 00:07:30.613
 A network connection alone is not proof that GlintBeam has permission to control the TV.
 
-00:07:32.367 --> 00:07:39.796
+00:07:31.833 --> 00:07:39.262
 Sony uses its separate IP Control path, with the TV’s PIN or configured pre-shared key where required.
 
-00:07:39.796 --> 00:07:43.874
+00:07:39.262 --> 00:07:43.341
 This is different from native Android TV remote pairing.
 
-00:07:43.874 --> 00:07:48.463
+00:07:43.341 --> 00:07:47.929
 Use only settings and televisions you are authorized to manage.
 
-00:07:49.667 --> 00:07:56.285
+00:07:49.133 --> 00:07:55.752
 For Vizio, use the pairing information requested by the television and wait for authentication.
 
-00:07:56.285 --> 00:07:58.933
+00:07:55.752 --> 00:07:58.400
 Check each operation on the TV screen.
 
-00:07:58.933 --> 00:08:03.810
+00:07:58.400 --> 00:08:03.277
 Do not assume every app, input, or button is available on every model.
 
-00:08:05.033 --> 00:08:11.584
+00:08:04.500 --> 00:08:11.051
 Roku uses its local network-control interface and does not require an invented pairing PIN.
 
-00:08:11.584 --> 00:08:15.039
+00:08:11.051 --> 00:08:14.506
 Enable network control where the TV requires it.
 
-00:08:15.039 --> 00:08:21.014
+00:08:14.506 --> 00:08:20.481
 GlintBeam still needs to verify the device before treating the connection as ready.
 
-00:08:22.233 --> 00:08:28.474
+00:08:21.700 --> 00:08:27.940
 Native Android and Google TV remote pairing is not available in this GlintBeam version.
 
-00:08:28.474 --> 00:08:33.782
+00:08:27.940 --> 00:08:33.248
 The presence of a brand-guide entry does not make that protocol supported.
 
-00:08:33.782 --> 00:08:37.799
+00:08:33.248 --> 00:08:37.265
 Some Sony TVs may use the separate Sony IP Control path.
 
-00:08:39.000 --> 00:08:44.789
+00:08:38.467 --> 00:08:44.255
 Scroll through the selected Brand Guide for its preparation checklist and capability notes.
 
-00:08:44.789 --> 00:08:48.033
+00:08:44.255 --> 00:08:47.500
 If a connection fails, review these settings first.
 
-00:08:48.033 --> 00:08:52.931
+00:08:47.500 --> 00:08:52.398
 Only change television settings you understand and have permission to change.
 
-00:08:54.133 --> 00:08:59.884
+00:08:53.600 --> 00:08:59.166
 Privacy and Info is available at the top of the app, including during setup.
 
-00:08:59.884 --> 00:09:07.376
+00:08:59.166 --> 00:09:06.416
 Read how local profiles, TV requests, optional speech processing, and support messages are handled.
 
-00:09:07.376 --> 00:09:10.932
+00:09:06.416 --> 00:09:09.858
 Microphone audio is not received by AILoopLabs.
 
-00:09:12.133 --> 00:09:17.817
+00:09:11.067 --> 00:09:16.750
 The Usage tab explains network risks, TV compatibility, and third-party charges.
 
-00:09:17.817 --> 00:09:23.643
+00:09:16.750 --> 00:09:22.576
 GlintBeam itself has no account, advertising, or in-app purchases in this version.
 
-00:09:23.643 --> 00:09:28.119
+00:09:22.576 --> 00:09:27.052
 Television services may still have their own charges and terms.
 
-00:09:29.333 --> 00:09:32.507
+00:09:28.267 --> 00:09:31.440
 The Licenses tab lists software and font notices.
 
-00:09:32.507 --> 00:09:36.134
+00:09:31.440 --> 00:09:35.067
 For help, use the support link on the GlintBeam website.
 
-00:09:36.134 --> 00:09:42.740
+00:09:35.067 --> 00:09:41.673
 You can replay any chapter, read the written guide, or return to the quick start whenever you need it.
 

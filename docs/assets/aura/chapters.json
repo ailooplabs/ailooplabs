@@ -175,7 +175,7 @@
           "x": 0.7236111,
           "y": 0.1375
         },
-        "audio_duration": 8.647708,
+        "audio_duration": 8.092167,
         "duration": 10.8,
         "start": 0,
         "end": 10.8
@@ -392,7 +392,7 @@
     ]
   },
   "full": {
-    "duration": 583.989887,
+    "duration": 582.92322,
     "scenes": [
       {
         "id": "full-00",
@@ -408,10 +408,10 @@
           "x": 0.7236111,
           "y": 0.1375
         },
-        "audio_duration": 12.483333,
-        "duration": 13.7,
+        "audio_duration": 11.939125,
+        "duration": 13.166667,
         "start": 0,
-        "end": 13.7
+        "end": 13.167
       },
       {
         "id": "full-01",
@@ -429,8 +429,8 @@
         },
         "audio_duration": 13.368667,
         "duration": 14.6,
-        "start": 13.7,
-        "end": 28.3
+        "start": 13.167,
+        "end": 27.767
       },
       {
         "id": "full-02",
@@ -444,8 +444,8 @@
         "control_target": null,
         "audio_duration": 12.382667,
         "duration": 13.6,
-        "start": 28.3,
-        "end": 41.9
+        "start": 27.767,
+        "end": 41.367
       },
       {
         "id": "full-03",
@@ -459,8 +459,8 @@
         "control_target": null,
         "audio_duration": 14.772625,
         "duration": 16.0,
-        "start": 41.9,
-        "end": 57.9
+        "start": 41.367,
+        "end": 57.367
       },
       {
         "id": "full-04",
@@ -478,8 +478,8 @@
         },
         "audio_duration": 11.721333,
         "duration": 12.933333,
-        "start": 57.9,
-        "end": 70.833
+        "start": 57.367,
+        "end": 70.3
       },
       {
         "id": "full-05",
@@ -497,8 +497,8 @@
         },
         "audio_duration": 13.408,
         "duration": 14.633333,
-        "start": 70.833,
-        "end": 85.467
+        "start": 70.3,
+        "end": 84.933
       },
       {
         "id": "full-06",
@@ -516,8 +516,8 @@
         },
         "audio_duration": 11.924625,
         "duration": 13.133333,
-        "start": 85.467,
-        "end": 98.6
+        "start": 84.933,
+        "end": 98.067
       },
       {
         "id": "full-07",
@@ -535,8 +535,8 @@
         },
         "audio_duration": 12.254667,
         "duration": 13.466667,
-        "start": 98.6,
-        "end": 112.067
+        "start": 98.067,
+        "end": 111.533
       },
       {
         "id": "full-08",
@@ -554,8 +554,8 @@
         },
         "audio_duration": 13.978625,
         "duration": 15.2,
-        "start": 112.067,
-        "end": 127.267
+        "start": 111.533,
+        "end": 126.733
       },
       {
         "id": "full-09",
@@ -573,8 +573,8 @@
         },
         "audio_duration": 14.112,
         "duration": 15.333333,
-        "start": 127.267,
-        "end": 142.6
+        "start": 126.733,
+        "end": 142.067
       },
       {
         "id": "full-10",
@@ -592,8 +592,8 @@
         },
         "audio_duration": 12.725333,
         "duration": 13.933333,
-        "start": 142.6,
-        "end": 156.533
+        "start": 142.067,
+        "end": 156.0
       },
       {
         "id": "full-11",
@@ -611,8 +611,8 @@
         },
         "audio_duration": 14.463292,
         "duration": 15.666667,
-        "start": 156.533,
-        "end": 172.2
+        "start": 156.0,
+        "end": 171.667
       },
       {
         "id": "full-12",
@@ -630,8 +630,8 @@
         },
         "audio_duration": 13.750667,
         "duration": 14.966667,
-        "start": 172.2,
-        "end": 187.167
+        "start": 171.667,
+        "end": 186.633
       },
       {
         "id": "full-13",
@@ -649,8 +649,8 @@
         },
         "audio_duration": 13.638625,
         "duration": 14.866667,
-        "start": 187.167,
-        "end": 202.033
+        "start": 186.633,
+        "end": 201.5
       },
       {
         "id": "full-14",
@@ -668,8 +668,8 @@
         },
         "audio_duration": 14.004,
         "duration": 15.233333,
-        "start": 202.033,
-        "end": 217.267
+        "start": 201.5,
+        "end": 216.733
       },
       {
         "id": "full-15",
@@ -687,8 +687,8 @@
         },
         "audio_duration": 15.139333,
         "duration": 16.366667,
-        "start": 217.267,
-        "end": 233.633
+        "start": 216.733,
+        "end": 233.1
       },
       {
         "id": "full-16",
@@ -706,8 +706,8 @@
         },
         "audio_duration": 13.745292,
         "duration": 14.966667,
-        "start": 233.633,
-        "end": 248.6
+        "start": 233.1,
+        "end": 248.067
       },
       {
         "id": "full-17",
@@ -721,8 +721,8 @@
         "control_target": null,
         "audio_duration": 14.463292,
         "duration": 15.666667,
-        "start": 248.6,
-        "end": 264.267
+        "start": 248.067,
+        "end": 263.733
       },
       {
         "id": "full-18",
@@ -736,8 +736,8 @@
         "control_target": null,
         "audio_duration": 13.322667,
         "duration": 14.533333,
-        "start": 264.267,
-        "end": 278.8
+        "start": 263.733,
+        "end": 278.267
       },
       {
         "id": "full-19",
@@ -755,8 +755,8 @@
         },
         "audio_duration": 14.420625,
         "duration": 15.633333,
-        "start": 278.8,
-        "end": 294.433
+        "start": 278.267,
+        "end": 293.9
       },
       {
         "id": "full-20",
@@ -770,8 +770,8 @@
         "control_target": null,
         "audio_duration": 15.699333,
         "duration": 16.9,
-        "start": 294.433,
-        "end": 311.333
+        "start": 293.9,
+        "end": 310.8
       },
       {
         "id": "full-21",
@@ -785,8 +785,8 @@
         "control_target": null,
         "audio_duration": 13.812,
         "duration": 15.033333,
-        "start": 311.333,
-        "end": 326.367
+        "start": 310.8,
+        "end": 325.833
       },
       {
         "id": "full-22",
@@ -804,8 +804,8 @@
         },
         "audio_duration": 13.779333,
         "duration": 15.0,
-        "start": 326.367,
-        "end": 341.367
+        "start": 325.833,
+        "end": 340.833
       },
       {
         "id": "full-23",
@@ -823,8 +823,8 @@
         },
         "audio_duration": 12.977333,
         "duration": 14.2,
-        "start": 341.367,
-        "end": 355.567
+        "start": 340.833,
+        "end": 355.033
       },
       {
         "id": "full-24",
@@ -842,8 +842,8 @@
         },
         "audio_duration": 14.356625,
         "duration": 15.566667,
-        "start": 355.567,
-        "end": 371.133
+        "start": 355.033,
+        "end": 370.6
       },
       {
         "id": "full-25",
@@ -861,8 +861,8 @@
         },
         "audio_duration": 15.221333,
         "duration": 16.433333,
-        "start": 371.133,
-        "end": 387.567
+        "start": 370.6,
+        "end": 387.033
       },
       {
         "id": "full-26",
@@ -880,8 +880,8 @@
         },
         "audio_duration": 14.249958,
         "duration": 15.466667,
-        "start": 387.567,
-        "end": 403.033
+        "start": 387.033,
+        "end": 402.5
       },
       {
         "id": "full-27",
@@ -899,8 +899,8 @@
         },
         "audio_duration": 13.375292,
         "duration": 14.6,
-        "start": 403.033,
-        "end": 417.633
+        "start": 402.5,
+        "end": 417.1
       },
       {
         "id": "full-28",
@@ -918,8 +918,8 @@
         },
         "audio_duration": 16.629333,
         "duration": 17.833333,
-        "start": 417.633,
-        "end": 435.467
+        "start": 417.1,
+        "end": 434.933
       },
       {
         "id": "full-29",
@@ -933,8 +933,8 @@
         "control_target": null,
         "audio_duration": 15.679292,
         "duration": 16.9,
-        "start": 435.467,
-        "end": 452.367
+        "start": 434.933,
+        "end": 451.833
       },
       {
         "id": "full-30",
@@ -948,8 +948,8 @@
         "control_target": null,
         "audio_duration": 16.096,
         "duration": 17.3,
-        "start": 452.367,
-        "end": 469.667
+        "start": 451.833,
+        "end": 469.133
       },
       {
         "id": "full-31",
@@ -963,8 +963,8 @@
         "control_target": null,
         "audio_duration": 14.143292,
         "duration": 15.366667,
-        "start": 469.667,
-        "end": 485.033
+        "start": 469.133,
+        "end": 484.5
       },
       {
         "id": "full-32",
@@ -978,8 +978,8 @@
         "control_target": null,
         "audio_duration": 15.980667,
         "duration": 17.2,
-        "start": 485.033,
-        "end": 502.233
+        "start": 484.5,
+        "end": 501.7
       },
       {
         "id": "full-33",
@@ -993,8 +993,8 @@
         "control_target": null,
         "audio_duration": 15.565333,
         "duration": 16.766667,
-        "start": 502.233,
-        "end": 519.0
+        "start": 501.7,
+        "end": 518.467
       },
       {
         "id": "full-34",
@@ -1012,8 +1012,8 @@
         },
         "audio_duration": 13.931333,
         "duration": 15.133333,
-        "start": 519.0,
-        "end": 534.133
+        "start": 518.467,
+        "end": 533.6
       },
       {
         "id": "full-35",
@@ -1029,10 +1029,10 @@
           "x": 0.16875,
           "y": 0.16666667
         },
-        "audio_duration": 16.799083,
-        "duration": 18.0,
-        "start": 534.133,
-        "end": 552.133
+        "audio_duration": 16.2585,
+        "duration": 17.466667,
+        "start": 533.6,
+        "end": 551.067
       },
       {
         "id": "full-36",
@@ -1050,8 +1050,8 @@
         },
         "audio_duration": 15.985333,
         "duration": 17.2,
-        "start": 552.133,
-        "end": 569.333
+        "start": 551.067,
+        "end": 568.267
       },
       {
         "id": "full-37",
@@ -1069,8 +1069,8 @@
         },
         "audio_duration": 13.406667,
         "duration": 14.633333,
-        "start": 569.333,
-        "end": 583.967
+        "start": 568.267,
+        "end": 582.9
       }
     ]
   }
