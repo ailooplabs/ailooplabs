@@ -7,67 +7,67 @@
   "gallery": [
     {
       "screenshot": "screens/01-welcome.png",
-      "title": "Welcome to Aura"
+      "title": "Welcome"
     },
     {
       "screenshot": "screens/02-welcome-bottom.png",
-      "title": "First-use tips"
+      "title": "Welcome Bottom"
     },
     {
       "screenshot": "screens/03-tutorial-controls.png",
-      "title": "Control modes"
+      "title": "Tutorial Controls"
     },
     {
       "screenshot": "screens/04-tutorial-search.png",
-      "title": "Search and voice introduction"
+      "title": "Tutorial Search"
     },
     {
       "screenshot": "screens/05-start-search.png",
-      "title": "Start TV discovery"
+      "title": "Start Search"
     },
     {
       "screenshot": "screens/06-discovery-empty.png",
-      "title": "No TVs found"
+      "title": "Discovery Empty"
     },
     {
       "screenshot": "screens/07-discovery-found.png",
-      "title": "Select a discovered TV"
+      "title": "Discovery Found"
     },
     {
       "screenshot": "screens/08-manual-ip.png",
-      "title": "Connect by TV address"
+      "title": "Manual Ip"
     },
     {
       "screenshot": "screens/09-pairing-approval.png",
-      "title": "TV approval"
+      "title": "Pairing Approval"
     },
     {
       "screenshot": "screens/10-pairing-pin.png",
-      "title": "TV PIN or key"
+      "title": "Pairing Pin"
     },
     {
       "screenshot": "screens/11-pairing-retry.png",
-      "title": "Retry authorization"
+      "title": "Pairing Retry"
     },
     {
       "screenshot": "screens/12-label-tv.png",
-      "title": "Name your TV"
+      "title": "Label Tv"
     },
     {
       "screenshot": "screens/12b-save-tv.png",
-      "title": "Save your TV"
+      "title": "Save Tv"
     },
     {
       "screenshot": "screens/13-remote.png",
-      "title": "Directional remote"
+      "title": "Remote"
     },
     {
       "screenshot": "screens/14-touchpad.png",
-      "title": "Swipe touchpad"
+      "title": "Touchpad"
     },
     {
       "screenshot": "screens/15-remote-lower.png",
-      "title": "More remote controls"
+      "title": "Remote Lower"
     },
     {
       "screenshot": "screens/16-movie-center.png",
@@ -75,19 +75,19 @@
     },
     {
       "screenshot": "screens/17-movie-shortcuts.png",
-      "title": "App shortcuts"
+      "title": "Movie Shortcuts"
     },
     {
       "screenshot": "screens/18-inputs.png",
-      "title": "TV inputs"
+      "title": "Inputs"
     },
     {
       "screenshot": "screens/19-devices.png",
-      "title": "Saved TVs and rooms"
+      "title": "Devices"
     },
     {
       "screenshot": "screens/20-multiple-tvs.png",
-      "title": "Switch between TVs"
+      "title": "Multiple Tvs"
     },
     {
       "screenshot": "screens/21-brand-guide.png",
@@ -95,76 +95,76 @@
     },
     {
       "screenshot": "screens/22-brand-guide-details.png",
-      "title": "Brand preparation checklist"
+      "title": "Brand Guide Details"
     },
     {
       "screenshot": "screens/22-guide-android_tv.png",
-      "title": "Android / Google TV limitation"
+      "title": "Guide Android_Tv"
     },
     {
       "screenshot": "screens/22-guide-lg.png",
-      "title": "LG setup guide"
+      "title": "Guide Lg"
     },
     {
       "screenshot": "screens/22-guide-roku.png",
-      "title": "Roku setup guide"
+      "title": "Guide Roku"
     },
     {
       "screenshot": "screens/22-guide-sony.png",
-      "title": "Sony setup guide"
+      "title": "Guide Sony"
     },
     {
       "screenshot": "screens/22-guide-vizio.png",
-      "title": "Vizio setup guide"
+      "title": "Guide Vizio"
     },
     {
       "screenshot": "screens/23-keyboard.png",
-      "title": "Keyboard and voice"
+      "title": "Keyboard"
     },
     {
       "screenshot": "screens/23b-voice-consent.png",
-      "title": "Microphone explanation"
+      "title": "Voice Consent"
     },
     {
       "screenshot": "screens/24-number-pad.png",
-      "title": "Number pad and color keys"
+      "title": "Number Pad"
     },
     {
       "screenshot": "screens/25-add-brand.png",
-      "title": "Add TV: choose a brand"
+      "title": "Add Brand"
     },
     {
       "screenshot": "screens/26-add-discovery.png",
-      "title": "Add TV: discovery"
+      "title": "Add Discovery"
     },
     {
       "screenshot": "screens/27-add-auth.png",
-      "title": "Add TV: authorization"
+      "title": "Add Auth"
     },
     {
       "screenshot": "screens/28-add-checks.png",
-      "title": "Add TV: compatibility checks"
+      "title": "Add Checks"
     },
     {
       "screenshot": "screens/29-privacy.png",
-      "title": "Privacy information"
+      "title": "Privacy"
     },
     {
       "screenshot": "screens/30-usage.png",
-      "title": "Usage information"
+      "title": "Usage"
     },
     {
       "screenshot": "screens/31-licenses.png",
-      "title": "Software and font notices"
+      "title": "Licenses"
     }
   ],
   "quick": {
-    "duration": 137.62322,
+    "duration": 138.756553,
     "scenes": [
       {
         "id": "quick-00",
         "title": "Start on the same Wi-Fi",
-        "narration": "Welcome to Aura Remote, a product by AILoopLabs. Turn on your TV and connect your phone to the same trusted Wi-Fi network.",
+        "narration": "Welcome to GlintBeam, a product by A. I Looplabs. Turn on your TV and connect your phone to the same trusted Wi-Fi network.",
         "screenshot": "screens/01-welcome.png",
         "cursor": [
           0.7236111,
@@ -175,7 +175,7 @@
           "x": 0.7236111,
           "y": 0.1375
         },
-        "audio_duration": 8.692,
+        "audio_duration": 8.652625,
         "duration": 10.8,
         "start": 0,
         "end": 10.8
@@ -221,7 +221,7 @@
       {
         "id": "quick-03",
         "title": "Follow the TV\u2019s prompt",
-        "narration": "Depending on the brand, approve a TV prompt or enter its required code. Roku does not need a PIN. Wait for Aura to confirm authorization.",
+        "narration": "Depending on the brand, approve a TV prompt or enter its required code. Roku does not need a PIN. Wait for GlintBeam to confirm authorization.",
         "screenshot": "screens/09-pairing-approval.png",
         "cursor": [
           0.5,
@@ -232,10 +232,10 @@
           "x": 0.5,
           "y": 0.3703125
         },
-        "audio_duration": 10.309333,
-        "duration": 11.533333,
+        "audio_duration": 10.560667,
+        "duration": 11.766667,
         "start": 32.4,
-        "end": 43.933
+        "end": 44.167
       },
       {
         "id": "quick-04",
@@ -253,8 +253,8 @@
         },
         "audio_duration": 8.996625,
         "duration": 10.8,
-        "start": 43.933,
-        "end": 54.733
+        "start": 44.167,
+        "end": 54.967
       },
       {
         "id": "quick-05",
@@ -272,8 +272,8 @@
         },
         "audio_duration": 9.929333,
         "duration": 11.133333,
-        "start": 54.733,
-        "end": 65.867
+        "start": 54.967,
+        "end": 66.1
       },
       {
         "id": "quick-06",
@@ -291,13 +291,13 @@
         },
         "audio_duration": 9.556625,
         "duration": 10.8,
-        "start": 65.867,
-        "end": 76.667
+        "start": 66.1,
+        "end": 76.9
       },
       {
         "id": "quick-07",
         "title": "Explore TV shortcuts",
-        "narration": "Movie Center contains search, playback, app, and input requests. Aura does not supply streaming content. Availability depends on your TV and its services.",
+        "narration": "Movie Center contains search, playback, app, and input requests. GlintBeam does not supply streaming content. Availability depends on your TV and its services.",
         "screenshot": "screens/16-movie-center.png",
         "cursor": [
           0.8833333,
@@ -308,10 +308,10 @@
           "x": 0.8833333,
           "y": 0.6976563
         },
-        "audio_duration": 10.707333,
-        "duration": 11.933333,
-        "start": 76.667,
-        "end": 88.6
+        "audio_duration": 11.166625,
+        "duration": 12.366667,
+        "start": 76.9,
+        "end": 89.267
       },
       {
         "id": "quick-08",
@@ -329,8 +329,8 @@
         },
         "audio_duration": 11.185292,
         "duration": 12.4,
-        "start": 88.6,
-        "end": 101.0
+        "start": 89.267,
+        "end": 101.667
       },
       {
         "id": "quick-09",
@@ -348,8 +348,8 @@
         },
         "audio_duration": 11.540625,
         "duration": 12.766667,
-        "start": 101.0,
-        "end": 113.767
+        "start": 101.667,
+        "end": 114.433
       },
       {
         "id": "quick-10",
@@ -367,13 +367,13 @@
         },
         "audio_duration": 10.784,
         "duration": 12.0,
-        "start": 113.767,
-        "end": 125.767
+        "start": 114.433,
+        "end": 126.433
       },
       {
         "id": "quick-11",
         "title": "Help is always nearby",
-        "narration": "Use Privacy and Info for disclosures and notices. Visit the Aura website for the complete manual and support. You are ready to try the basic remote controls.",
+        "narration": "Use Privacy and Info for disclosures and notices. Visit the GlintBeam website for the complete manual and support. You are ready to try the basic remote controls.",
         "screenshot": "screens/29-privacy.png",
         "cursor": [
           0.16875,
@@ -384,20 +384,20 @@
           "x": 0.16875,
           "y": 0.16666667
         },
-        "audio_duration": 10.623292,
-        "duration": 11.833333,
-        "start": 125.767,
-        "end": 137.6
+        "audio_duration": 11.071292,
+        "duration": 12.3,
+        "start": 126.433,
+        "end": 138.733
       }
     ]
   },
   "full": {
-    "duration": 580.02322,
+    "duration": 583.756553,
     "scenes": [
       {
         "id": "full-00",
-        "title": "Meet Aura Remote",
-        "narration": "Start with your phone and television on the same trusted Wi-Fi network. Turn the television on. Aura Remote is a product by AILoopLabs. This guide uses labeled example TV data.",
+        "title": "Meet GlintBeam",
+        "narration": "Start with your phone and television on the same trusted Wi-Fi network. Turn the television on. GlintBeam is a product by A. I Looplabs. This guide uses labeled example TV data.",
         "screenshot": "screens/01-welcome.png",
         "cursor": [
           0.7236111,
@@ -408,10 +408,10 @@
           "x": 0.7236111,
           "y": 0.1375
         },
-        "audio_duration": 12.671292,
-        "duration": 13.9,
+        "audio_duration": 12.756625,
+        "duration": 13.966667,
         "start": 0,
-        "end": 13.9
+        "end": 13.967
       },
       {
         "id": "full-01",
@@ -429,38 +429,38 @@
         },
         "audio_duration": 13.368667,
         "duration": 14.6,
-        "start": 13.9,
-        "end": 28.5
+        "start": 13.967,
+        "end": 28.567
       },
       {
         "id": "full-02",
         "title": "Learn the navigation modes",
-        "narration": "Aura offers a directional pad and a swipe touchpad. The setup tips introduce both modes. Later, you can switch between them on the Remote screen and use whichever feels more comfortable.",
+        "narration": "GlintBeam offers a directional pad and a swipe touchpad. The setup tips introduce both modes. Later, you can switch between them on the Remote screen and use whichever feels more comfortable.",
         "screenshot": "screens/03-tutorial-controls.png",
         "cursor": [
           0.49,
           0.7
         ],
         "control_target": null,
-        "audio_duration": 12.009958,
-        "duration": 13.233333,
-        "start": 28.5,
-        "end": 41.733
+        "audio_duration": 12.382667,
+        "duration": 13.6,
+        "start": 28.567,
+        "end": 42.167
       },
       {
         "id": "full-03",
         "title": "Search, apps and voice",
-        "narration": "The next tip introduces TV app shortcuts, typed searches, and optional voice input. Aura sends requests to your selected TV. Streaming services may require their own accounts, payments, or subscriptions.",
+        "narration": "The next tip introduces TV app shortcuts, typed searches, and optional voice input. GlintBeam sends requests to your selected TV. Streaming services may require their own accounts, payments, or subscriptions.",
         "screenshot": "screens/04-tutorial-search.png",
         "cursor": [
           0.49,
           0.68
         ],
         "control_target": null,
-        "audio_duration": 14.252,
-        "duration": 15.466667,
-        "start": 41.733,
-        "end": 57.2
+        "audio_duration": 14.772625,
+        "duration": 16.0,
+        "start": 42.167,
+        "end": 58.167
       },
       {
         "id": "full-04",
@@ -478,8 +478,8 @@
         },
         "audio_duration": 11.721333,
         "duration": 12.933333,
-        "start": 57.2,
-        "end": 70.133
+        "start": 58.167,
+        "end": 71.1
       },
       {
         "id": "full-05",
@@ -497,8 +497,8 @@
         },
         "audio_duration": 13.408,
         "duration": 14.633333,
-        "start": 70.133,
-        "end": 84.767
+        "start": 71.1,
+        "end": 85.733
       },
       {
         "id": "full-06",
@@ -516,8 +516,8 @@
         },
         "audio_duration": 11.924625,
         "duration": 13.133333,
-        "start": 84.767,
-        "end": 97.9
+        "start": 85.733,
+        "end": 98.867
       },
       {
         "id": "full-07",
@@ -535,13 +535,13 @@
         },
         "audio_duration": 12.254667,
         "duration": 13.466667,
-        "start": 97.9,
-        "end": 111.367
+        "start": 98.867,
+        "end": 112.333
       },
       {
         "id": "full-08",
         "title": "Approve on the television",
-        "narration": "Some TVs, including Samsung, show an approval request on the television. Allow Aura there and wait for confirmation. This is an illustrated app state; your actual television prompt may look different.",
+        "narration": "Some TVs, including Samsung, show an approval request on the television. Allow GlintBeam there and wait for confirmation. This is an illustrated app state; your actual television prompt may look different.",
         "screenshot": "screens/09-pairing-approval.png",
         "cursor": [
           0.5,
@@ -552,10 +552,10 @@
           "x": 0.5,
           "y": 0.3703125
         },
-        "audio_duration": 13.947333,
-        "duration": 15.166667,
-        "start": 111.367,
-        "end": 126.533
+        "audio_duration": 13.978625,
+        "duration": 15.2,
+        "start": 112.333,
+        "end": 127.533
       },
       {
         "id": "full-09",
@@ -573,8 +573,8 @@
         },
         "audio_duration": 14.112,
         "duration": 15.333333,
-        "start": 126.533,
-        "end": 141.867
+        "start": 127.533,
+        "end": 142.867
       },
       {
         "id": "full-10",
@@ -592,13 +592,13 @@
         },
         "audio_duration": 12.725333,
         "duration": 13.933333,
-        "start": 141.867,
-        "end": 155.8
+        "start": 142.867,
+        "end": 156.8
       },
       {
         "id": "full-11",
         "title": "Give your TV a useful name",
-        "narration": "After the television confirms pairing, choose a recognizable name, such as Living Room TV. Assign a room so multiple televisions are easier to find. The saved profile remains in Aura on this phone.",
+        "narration": "After the television confirms pairing, choose a recognizable name, such as Living Room TV. Assign a room so multiple televisions are easier to find. The saved profile remains in GlintBeam on this phone.",
         "screenshot": "screens/12-label-tv.png",
         "cursor": [
           0.5,
@@ -609,10 +609,10 @@
           "x": 0.5,
           "y": 0.621875
         },
-        "audio_duration": 14.069333,
-        "duration": 15.3,
-        "start": 155.8,
-        "end": 171.1
+        "audio_duration": 14.463292,
+        "duration": 15.666667,
+        "start": 156.8,
+        "end": 172.467
       },
       {
         "id": "full-12",
@@ -630,8 +630,8 @@
         },
         "audio_duration": 13.750667,
         "duration": 14.966667,
-        "start": 171.1,
-        "end": 186.067
+        "start": 172.467,
+        "end": 187.433
       },
       {
         "id": "full-13",
@@ -649,8 +649,8 @@
         },
         "audio_duration": 13.638625,
         "duration": 14.866667,
-        "start": 186.067,
-        "end": 200.933
+        "start": 187.433,
+        "end": 202.3
       },
       {
         "id": "full-14",
@@ -668,8 +668,8 @@
         },
         "audio_duration": 14.004,
         "duration": 15.233333,
-        "start": 200.933,
-        "end": 216.167
+        "start": 202.3,
+        "end": 217.533
       },
       {
         "id": "full-15",
@@ -687,13 +687,13 @@
         },
         "audio_duration": 15.139333,
         "duration": 16.366667,
-        "start": 216.167,
-        "end": 232.533
+        "start": 217.533,
+        "end": 233.9
       },
       {
         "id": "full-16",
         "title": "Open Movie Center",
-        "narration": "Use the bottom Movie Center tab for TV search and playback requests. Type a movie, show, or actor and send the search to your TV. Aura does not supply movies or guarantee automatic playback.",
+        "narration": "Use the bottom Movie Center tab for TV search and playback requests. Type a movie, show, or actor and send the search to your TV. GlintBeam does not supply movies or guarantee automatic playback.",
         "screenshot": "screens/16-movie-center.png",
         "cursor": [
           0.8833333,
@@ -704,10 +704,10 @@
           "x": 0.8833333,
           "y": 0.6976563
         },
-        "audio_duration": 13.428,
-        "duration": 14.633333,
-        "start": 232.533,
-        "end": 247.167
+        "audio_duration": 13.745292,
+        "duration": 14.966667,
+        "start": 233.9,
+        "end": 248.867
       },
       {
         "id": "full-17",
@@ -721,8 +721,8 @@
         "control_target": null,
         "audio_duration": 14.463292,
         "duration": 15.666667,
-        "start": 247.167,
-        "end": 262.833
+        "start": 248.867,
+        "end": 264.533
       },
       {
         "id": "full-18",
@@ -736,8 +736,8 @@
         "control_target": null,
         "audio_duration": 13.322667,
         "duration": 14.533333,
-        "start": 262.833,
-        "end": 277.367
+        "start": 264.533,
+        "end": 279.067
       },
       {
         "id": "full-19",
@@ -755,8 +755,8 @@
         },
         "audio_duration": 14.420625,
         "duration": 15.633333,
-        "start": 277.367,
-        "end": 293.0
+        "start": 279.067,
+        "end": 294.7
       },
       {
         "id": "full-20",
@@ -770,8 +770,8 @@
         "control_target": null,
         "audio_duration": 15.699333,
         "duration": 16.9,
-        "start": 293.0,
-        "end": 309.9
+        "start": 294.7,
+        "end": 311.6
       },
       {
         "id": "full-21",
@@ -785,13 +785,13 @@
         "control_target": null,
         "audio_duration": 13.812,
         "duration": 15.033333,
-        "start": 309.9,
-        "end": 324.933
+        "start": 311.6,
+        "end": 326.633
       },
       {
         "id": "full-22",
         "title": "Manage saved televisions",
-        "narration": "Open TVs and Setup to see saved devices and rooms. Select a TV to make it active. The heart marks favorites. Removing a TV deletes its saved profile and pairing credentials from Aura.",
+        "narration": "Open TVs and Setup to see saved devices and rooms. Select a TV to make it active. The heart marks favorites. Removing a TV deletes its saved profile and pairing credentials from GlintBeam.",
         "screenshot": "screens/19-devices.png",
         "cursor": [
           0.78194445,
@@ -802,10 +802,10 @@
           "x": 0.78194445,
           "y": 0.3140625
         },
-        "audio_duration": 13.460625,
-        "duration": 14.666667,
-        "start": 324.933,
-        "end": 339.6
+        "audio_duration": 13.779333,
+        "duration": 15.0,
+        "start": 326.633,
+        "end": 341.633
       },
       {
         "id": "full-23",
@@ -823,8 +823,8 @@
         },
         "audio_duration": 12.977333,
         "duration": 14.2,
-        "start": 339.6,
-        "end": 353.8
+        "start": 341.633,
+        "end": 355.833
       },
       {
         "id": "full-24",
@@ -842,8 +842,8 @@
         },
         "audio_duration": 14.356625,
         "duration": 15.566667,
-        "start": 353.8,
-        "end": 369.367
+        "start": 355.833,
+        "end": 371.4
       },
       {
         "id": "full-25",
@@ -861,8 +861,8 @@
         },
         "audio_duration": 15.221333,
         "duration": 16.433333,
-        "start": 369.367,
-        "end": 385.8
+        "start": 371.4,
+        "end": 387.833
       },
       {
         "id": "full-26",
@@ -880,8 +880,8 @@
         },
         "audio_duration": 14.249958,
         "duration": 15.466667,
-        "start": 385.8,
-        "end": 401.267
+        "start": 387.833,
+        "end": 403.3
       },
       {
         "id": "full-27",
@@ -899,8 +899,8 @@
         },
         "audio_duration": 13.375292,
         "duration": 14.6,
-        "start": 401.267,
-        "end": 415.867
+        "start": 403.3,
+        "end": 417.9
       },
       {
         "id": "full-28",
@@ -918,23 +918,23 @@
         },
         "audio_duration": 16.629333,
         "duration": 17.833333,
-        "start": 415.867,
-        "end": 433.7
+        "start": 417.9,
+        "end": 435.733
       },
       {
         "id": "full-29",
         "title": "LG authorization",
-        "narration": "For LG, follow the TV\u2019s registration or pairing prompt and wait for authorization. Features vary by model and supported protocol. A network connection alone is not proof that Aura has permission to control the TV.",
+        "narration": "For LG, follow the TV\u2019s registration or pairing prompt and wait for authorization. Features vary by model and supported protocol. A network connection alone is not proof that GlintBeam has permission to control the TV.",
         "screenshot": "screens/22-guide-lg.png",
         "cursor": [
           0.5,
           0.69
         ],
         "control_target": null,
-        "audio_duration": 15.433333,
-        "duration": 16.633333,
-        "start": 433.7,
-        "end": 450.333
+        "audio_duration": 15.679292,
+        "duration": 16.9,
+        "start": 435.733,
+        "end": 452.633
       },
       {
         "id": "full-30",
@@ -948,8 +948,8 @@
         "control_target": null,
         "audio_duration": 16.096,
         "duration": 17.3,
-        "start": 450.333,
-        "end": 467.633
+        "start": 452.633,
+        "end": 469.933
       },
       {
         "id": "full-31",
@@ -963,38 +963,38 @@
         "control_target": null,
         "audio_duration": 14.143292,
         "duration": 15.366667,
-        "start": 467.633,
-        "end": 483.0
+        "start": 469.933,
+        "end": 485.3
       },
       {
         "id": "full-32",
         "title": "Roku connection",
-        "narration": "Roku uses its local network-control interface and does not require an invented pairing PIN. Enable network control where the TV requires it. Aura still needs to verify the device before treating the connection as ready.",
+        "narration": "Roku uses its local network-control interface and does not require an invented pairing PIN. Enable network control where the TV requires it. GlintBeam still needs to verify the device before treating the connection as ready.",
         "screenshot": "screens/22-guide-roku.png",
         "cursor": [
           0.5,
           0.69
         ],
         "control_target": null,
-        "audio_duration": 15.564,
-        "duration": 16.766667,
-        "start": 483.0,
-        "end": 499.767
+        "audio_duration": 15.980667,
+        "duration": 17.2,
+        "start": 485.3,
+        "end": 502.5
       },
       {
         "id": "full-33",
         "title": "Android TV limitation",
-        "narration": "Native Android and Google TV remote pairing is not available in this Aura version. The presence of a brand-guide entry does not make that protocol supported. Some Sony TVs may use the separate Sony IP Control path.",
+        "narration": "Native Android and Google TV remote pairing is not available in this GlintBeam version. The presence of a brand-guide entry does not make that protocol supported. Some Sony TVs may use the separate Sony IP Control path.",
         "screenshot": "screens/22-guide-android_tv.png",
         "cursor": [
           0.5,
           0.69
         ],
         "control_target": null,
-        "audio_duration": 15.161333,
-        "duration": 16.366667,
-        "start": 499.767,
-        "end": 516.133
+        "audio_duration": 15.565333,
+        "duration": 16.766667,
+        "start": 502.5,
+        "end": 519.267
       },
       {
         "id": "full-34",
@@ -1012,13 +1012,13 @@
         },
         "audio_duration": 13.931333,
         "duration": 15.133333,
-        "start": 516.133,
-        "end": 531.267
+        "start": 519.267,
+        "end": 534.4
       },
       {
         "id": "full-35",
         "title": "Find privacy information",
-        "narration": "Privacy and Info is available at the top of the app, including during setup. Read how local profiles, TV requests, optional speech processing, and support messages are handled. Microphone audio is not received by AILoopLabs.",
+        "narration": "Privacy and Info is available at the top of the app, including during setup. Read how local profiles, TV requests, optional speech processing, and support messages are handled. Microphone audio is not received by A. I Looplabs.",
         "screenshot": "screens/29-privacy.png",
         "cursor": [
           0.16875,
@@ -1029,15 +1029,15 @@
           "x": 0.16875,
           "y": 0.16666667
         },
-        "audio_duration": 16.276625,
+        "audio_duration": 16.297958,
         "duration": 17.5,
-        "start": 531.267,
-        "end": 548.767
+        "start": 534.4,
+        "end": 551.9
       },
       {
         "id": "full-36",
         "title": "Read usage information",
-        "narration": "The Usage tab explains network risks, TV compatibility, and third-party charges. Aura itself has no account, advertising, or in-app purchases in this version. Television services may still have their own charges and terms.",
+        "narration": "The Usage tab explains network risks, TV compatibility, and third-party charges. GlintBeam itself has no account, advertising, or in-app purchases in this version. Television services may still have their own charges and terms.",
         "screenshot": "screens/30-usage.png",
         "cursor": [
           0.36180556,
@@ -1048,15 +1048,15 @@
           "x": 0.36180556,
           "y": 0.16666667
         },
-        "audio_duration": 15.613958,
-        "duration": 16.833333,
-        "start": 548.767,
-        "end": 565.6
+        "audio_duration": 15.985333,
+        "duration": 17.2,
+        "start": 551.9,
+        "end": 569.1
       },
       {
         "id": "full-37",
         "title": "Get help and continue",
-        "narration": "The Licenses tab lists software and font notices. For help, use the support link on the Aura website. You can replay any chapter, read the written guide, or return to the quick start whenever you need it.",
+        "narration": "The Licenses tab lists software and font notices. For help, use the support link on the GlintBeam website. You can replay any chapter, read the written guide, or return to the quick start whenever you need it.",
         "screenshot": "screens/31-licenses.png",
         "cursor": [
           0.56805557,
@@ -1067,12 +1067,11 @@
           "x": 0.56805557,
           "y": 0.16666667
         },
-        "audio_duration": 13.173333,
-        "duration": 14.4,
-        "start": 565.6,
-        "end": 580.0
+        "audio_duration": 13.406667,
+        "duration": 14.633333,
+        "start": 569.1,
+        "end": 583.733
       }
     ]
-  },
-  "generated_at": "2026-11-20T06:47:04.054571-05:00"
+  }
 }

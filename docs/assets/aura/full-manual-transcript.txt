@@ -1,116 +1,116 @@
-Aura TV Remote - Full Manual
-English narration and captions. Example app states; no physical TV recording.
+GlintBeam TV Remote - Full Manual
+English narration and captions. Legacy Android 1.0.2 example states; no physical TV recording.
 
-00:00:00.000  Meet Aura Remote
-Start with your phone and television on the same trusted Wi-Fi network. Turn the television on. Aura Remote is a product by AILoopLabs. This guide uses labeled example TV data.
+00:00:00.000  Meet GlintBeam
+Start with your phone and television on the same trusted Wi-Fi network. Turn the television on. GlintBeam is a product by A. I Looplabs. This guide uses labeled example TV data.
 
-00:00:13.900  Before you connect
+00:00:13.967  Before you connect
 Read the first-use tips and select Next Tip to continue. These screenshots show example interface states, not a recording of a physical television responding. Supported controls depend on the TV model.
 
-00:00:28.500  Learn the navigation modes
-Aura offers a directional pad and a swipe touchpad. The setup tips introduce both modes. Later, you can switch between them on the Remote screen and use whichever feels more comfortable.
+00:00:28.567  Learn the navigation modes
+GlintBeam offers a directional pad and a swipe touchpad. The setup tips introduce both modes. Later, you can switch between them on the Remote screen and use whichever feels more comfortable.
 
-00:00:41.733  Search, apps and voice
-The next tip introduces TV app shortcuts, typed searches, and optional voice input. Aura sends requests to your selected TV. Streaming services may require their own accounts, payments, or subscriptions.
+00:00:42.167  Search, apps and voice
+The next tip introduces TV app shortcuts, typed searches, and optional voice input. GlintBeam sends requests to your selected TV. Streaming services may require their own accounts, payments, or subscriptions.
 
-00:00:57.200  Begin TV discovery
+00:00:58.167  Begin TV discovery
 Choose Search for TVs. Keep the phone and TV on the same local network. You can revisit the previous tip with Back. The tutorial checkbox controls whether these tips appear again.
 
-00:01:10.133  If no television appears
+00:01:11.100  If no television appears
 If discovery finds nothing, confirm the TV is on and connected to the same Wi-Fi. Try Rescan Wi-Fi. Guest networks or network isolation can prevent devices from finding each other.
 
-00:01:24.767  Choose the correct TV
+00:01:25.733  Choose the correct TV
 Select your television from the discovered list, then use the blue pairing button. Demo TV is an example. Confirm the name and brand belong to the television you intend to control.
 
-00:01:37.900  Connect using an IP address
+00:01:38.867  Connect using an IP address
 If discovery misses your TV, use the manual connection section. Choose its brand and enter the TV address shown in its network settings. Do not enter an address copied from this example.
 
-00:01:51.367  Approve on the television
-Some TVs, including Samsung, show an approval request on the television. Allow Aura there and wait for confirmation. This is an illustrated app state; your actual television prompt may look different.
+00:01:52.333  Approve on the television
+Some TVs, including Samsung, show an approval request on the television. Allow GlintBeam there and wait for confirmation. This is an illustrated app state; your actual television prompt may look different.
 
-00:02:06.533  Enter the TV’s own code
+00:02:07.533  Enter the TV’s own code
 Other televisions request a PIN or configured key. Enter the value from your television or its authorized settings, then verify. Never assume the sample code in a tutorial will pair a real TV.
 
-00:02:21.867  Handle a rejected pairing
+00:02:22.867  Handle a rejected pairing
 If authorization fails, the pairing screen stays open. Check the TV, request a new prompt, or go back and select the device again. A failed request does not mean the TV is connected.
 
-00:02:35.800  Give your TV a useful name
-After the television confirms pairing, choose a recognizable name, such as Living Room TV. Assign a room so multiple televisions are easier to find. The saved profile remains in Aura on this phone.
+00:02:36.800  Give your TV a useful name
+After the television confirms pairing, choose a recognizable name, such as Living Room TV. Assign a room so multiple televisions are easier to find. The saved profile remains in GlintBeam on this phone.
 
-00:02:51.100  Save and open the remote
+00:02:52.467  Save and open the remote
 Choose Save and Open Remote after pairing and naming your television. The app then opens the main remote. The example shown here illustrates the destination; it is not evidence of hardware compatibility.
 
-00:03:06.067  Use the directional pad
+00:03:07.433  Use the directional pad
 Tap the directional arrows to move through the television interface. Tap OK to select. The top row includes power, source, the number pad, and keyboard or voice access. Check the TV for each result.
 
-00:03:20.933  Switch to swipe navigation
+00:03:22.300  Switch to swipe navigation
 Choose Swipe Touchpad. Swipe to navigate, tap to select, and double-tap to go back. These gestures send navigation requests; smooth pointer movement and other behavior depend on the selected TV protocol.
 
-00:03:36.167  Find Back, Home and volume
+00:03:37.533  Find Back, Home and volume
 Scroll down the remote to reach Back, Home, Movies, Guide, Menu, volume, mute, and channel controls. Some controls depend on your TV. Displayed information is not a continuously synchronized TV status feed.
 
-00:03:52.533  Open Movie Center
-Use the bottom Movie Center tab for TV search and playback requests. Type a movie, show, or actor and send the search to your TV. Aura does not supply movies or guarantee automatic playback.
+00:03:53.900  Open Movie Center
+Use the bottom Movie Center tab for TV search and playback requests. Type a movie, show, or actor and send the search to your TV. GlintBeam does not supply movies or guarantee automatic playback.
 
-00:04:07.167  Request apps and inputs
+00:04:08.867  Request apps and inputs
 Scroll within Movie Center to find app and input shortcuts. A request works only where the selected TV protocol supports it. An app tile does not include a streaming subscription or guarantee the service is installed.
 
-00:04:22.833  Understand input selection
+00:04:24.533  Understand input selection
 Input controls vary by television. Some models can select an input directly; others can only open the TV source menu. Check the actual TV screen and make any remaining selection there.
 
-00:04:37.367  Use the TV keyboard
+00:04:39.067  Use the TV keyboard
 Open the microphone or keyboard button on the remote. Type a search or other TV text, then send it. Use ordinary non-sensitive text: some television control protocols use unencrypted local connections.
 
-00:04:53.000  Choose whether to use voice
+00:04:54.700  Choose whether to use voice
 Voice input is optional. Read the microphone explanation before continuing. Your Android speech provider may process audio on its servers. You can choose typed input instead; basic remote buttons do not need microphone access.
 
-00:05:09.900  Open numbers and color keys
+00:05:11.600  Open numbers and color keys
 The dial-pad button opens channel numbers and color keys. Use these only where your TV supports them. Close the sheet to return to the remote. Sending a number does not guarantee a particular channel exists.
 
-00:05:24.933  Manage saved televisions
-Open TVs and Setup to see saved devices and rooms. Select a TV to make it active. The heart marks favorites. Removing a TV deletes its saved profile and pairing credentials from Aura.
+00:05:26.633  Manage saved televisions
+Open TVs and Setup to see saved devices and rooms. Select a TV to make it active. The heart marks favorites. Removing a TV deletes its saved profile and pairing credentials from GlintBeam.
 
-00:05:39.600  Switch devices and rooms
+00:05:41.633  Switch devices and rooms
 With more than one saved TV, use the top device selector or room filters to find the right one. Always check which TV is active before sending power, volume, search, or other commands.
 
-00:05:53.800  Add another television
+00:05:55.833  Add another television
 Choose Add TV to open the four-step wizard. Select the brand and read its preparation checklist. Prepare the television’s network-control settings before scanning. The wizard is separate from the initial tutorial.
 
-00:06:09.367  Discover an additional TV
+00:06:11.400  Discover an additional TV
 The wizard shows discovered devices for the selected brand. Select the intended television, or enter its network address manually. Example names and addresses shown in this guide must be replaced with your own TV details.
 
-00:06:25.800  Verify authorization
+00:06:27.833  Verify authorization
 Follow the authorization instructions for the selected television. Allow its prompt or enter its required code. Wait for a verified result before proceeding. Do not treat a pending handshake as successful pairing.
 
-00:06:41.267  Check compatibility and save
+00:06:43.300  Check compatibility and save
 In the compatibility step, try the displayed test buttons and check the television for the result. Name the device and assign its room. Only save once the app’s required verification steps are satisfied.
 
-00:06:55.867  Read the Brand Guide
+00:06:57.900  Read the Brand Guide
 The Brand Guide tab contains preparation instructions and protocol-specific information. Select your manufacturer. Use your television’s own settings and documentation where menu names differ. This guide does not certify every model from a brand.
 
-00:07:13.700  LG authorization
-For LG, follow the TV’s registration or pairing prompt and wait for authorization. Features vary by model and supported protocol. A network connection alone is not proof that Aura has permission to control the TV.
+00:07:15.733  LG authorization
+For LG, follow the TV’s registration or pairing prompt and wait for authorization. Features vary by model and supported protocol. A network connection alone is not proof that GlintBeam has permission to control the TV.
 
-00:07:30.333  Sony IP Control
+00:07:32.633  Sony IP Control
 Sony uses its separate IP Control path, with the TV’s PIN or configured pre-shared key where required. This is different from native Android TV remote pairing. Use only settings and televisions you are authorized to manage.
 
-00:07:47.633  Vizio pairing
+00:07:49.933  Vizio pairing
 For Vizio, use the pairing information requested by the television and wait for authentication. Check each operation on the TV screen. Do not assume every app, input, or button is available on every model.
 
-00:08:03.000  Roku connection
-Roku uses its local network-control interface and does not require an invented pairing PIN. Enable network control where the TV requires it. Aura still needs to verify the device before treating the connection as ready.
+00:08:05.300  Roku connection
+Roku uses its local network-control interface and does not require an invented pairing PIN. Enable network control where the TV requires it. GlintBeam still needs to verify the device before treating the connection as ready.
 
-00:08:19.767  Android TV limitation
-Native Android and Google TV remote pairing is not available in this Aura version. The presence of a brand-guide entry does not make that protocol supported. Some Sony TVs may use the separate Sony IP Control path.
+00:08:22.500  Android TV limitation
+Native Android and Google TV remote pairing is not available in this GlintBeam version. The presence of a brand-guide entry does not make that protocol supported. Some Sony TVs may use the separate Sony IP Control path.
 
-00:08:36.133  Review the preparation checklist
+00:08:39.267  Review the preparation checklist
 Scroll through the selected Brand Guide for its preparation checklist and capability notes. If a connection fails, review these settings first. Only change television settings you understand and have permission to change.
 
-00:08:51.267  Find privacy information
-Privacy and Info is available at the top of the app, including during setup. Read how local profiles, TV requests, optional speech processing, and support messages are handled. Microphone audio is not received by AILoopLabs.
+00:08:54.400  Find privacy information
+Privacy and Info is available at the top of the app, including during setup. Read how local profiles, TV requests, optional speech processing, and support messages are handled. Microphone audio is not received by A. I Looplabs.
 
-00:09:08.767  Read usage information
-The Usage tab explains network risks, TV compatibility, and third-party charges. Aura itself has no account, advertising, or in-app purchases in this version. Television services may still have their own charges and terms.
+00:09:11.900  Read usage information
+The Usage tab explains network risks, TV compatibility, and third-party charges. GlintBeam itself has no account, advertising, or in-app purchases in this version. Television services may still have their own charges and terms.
 
-00:09:25.600  Get help and continue
-The Licenses tab lists software and font notices. For help, use the support link on the Aura website. You can replay any chapter, read the written guide, or return to the quick start whenever you need it.
+00:09:29.100  Get help and continue
+The Licenses tab lists software and font notices. For help, use the support link on the GlintBeam website. You can replay any chapter, read the written guide, or return to the quick start whenever you need it.
